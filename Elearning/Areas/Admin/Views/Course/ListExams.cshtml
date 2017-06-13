@@ -1,0 +1,116 @@
+﻿@model PagedList.IPagedList<Model.EF.Exam>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "ListExam";
+    var courseid = ViewBag.courseid;
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section jsFooter{
+    <script src="~/Assets/admin/js/controller/examControllerDelete.js"></script>
+    <script src="~/Assets/admin/js/controller/examControllerChangeStatus.js"></script>
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Course
+        <small>Control panel</small>
+        <a href="/Admin/Course/CreateExam/@courseid" class="btn btn-default">Thêm Mới</a>
+    </h1>
+    <br />
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Course</a></li>
+        <li class="active">Exam List</li>
+    </ol>
+</section>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Danh sách exam
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+                <!-- Form tìm kiếm cho Course -->
+                @using (Html.BeginForm("ListExams", "Course", FormMethod.Get))
+                {
+                    <div class="row form-group">
+                        <div class="col-lg-12">
+                            <div class="col-md-4">
+                                <input type="text" value="@ViewBag.SearchString" class="form-control" name="searchString" placeholder="Nhập tên exam" />
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                <input type="text" hidden value="@courseid" name="courseid">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                @*<th>ID</th>*@
+                                <th>Name</th>
+                                <th>Preview</th>
+                                <th>Type</th>
+                                <th>Kết quả</th>
+                                <th style="width: 30px;">Status</th>
+                                <th style="width: 10px;">Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <!-- Đặt row_item.CourseID để xoá User mỗi row sẽ có 1 ID -->
+                                <tr id="row_@item.ExamID">
+                                    @*<td><a href="/Admin/Course/ListExams/@item.CourseID"> @item.ExamID</a></td>*@
+                                    <td><a href="/Admin/Course/EditExam/@item.ExamID">@item.Name</a></td>
+                                    <td><a href="/Admin/Course/Preview/@item.ExamID">Preview</a></td>
+                                    <td>@item.Type</td>
+                                    @if (item.Type.Trim() == "1")
+                                    {
+                                        <td><a href="/Admin/Course/Result/@item.ExamID">Kết quả</a></td>
+                                    }
+                                    else
+                                    {
+                                        <td><a href="/Admin/Course/ResultFile/@item.ExamID">Kết quả</a></td>
+                                    }                                  
+                                    <td><button type="button" class="btn btn-block btn-warning btn-flat btn-active" data-idexam1="@item.ExamID">@(item.Status.Value ? "Kích hoạt" : "Khóa")</button></td>
+                                    <td>
+                                        <button type="button" class="btn btn-default">
+                                            @Ajax.ActionLink("Xoá", "DeleteExam", new { @id = @item.ExamID }, new AjaxOptions
+                                       {
+                                           Confirm = "Bạn chắc chắn muốn xoá bài thi này?",
+                                           OnComplete = "$('#row_" + @item.ExamID + "').remove()",
+                                           HttpMethod = "Delete"
+                                       })
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                    @Html.PagedListPager(Model, page => Url.Action("ListExams", new { page, @searchString = @ViewBag.SearchString }))
+                </div>
+                <!-- /.table-responsive -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+   
+    <!-- /.col-lg-6 -->
+</div>
+<!-- /.row -->
+@*<script>
+        function GetId() {
+            $("#courseID").val(@courseid)
+        }
+</script>*@

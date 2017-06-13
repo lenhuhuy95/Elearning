@@ -1,0 +1,84 @@
+﻿@model PagedList.IPagedList<Model.EF.Salary>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "History";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var historyCourse = (List<Model.EF.Course>)ViewBag.HistoryCourse;
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Chi tiết admin salary</h4>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+                @foreach(var item in Model)
+                {
+                    foreach(var item1 in historyCourse)
+                    {
+                        if(item.CourseID == item1.CourseID)
+                        {
+                            <h4><strong>@item1.CourseName</strong></h4>
+                            <br />
+                            break;
+                        }
+                    }
+                }
+
+                <!-- Form tìm kiếm cho Course -->
+                @*@using (Html.BeginForm("History", "UserAdmin", FormMethod.Get))
+                {
+                    <div class="row form-group">
+                        <div class="col-lg-12">
+                            <div class="col-md-4">
+                                <input type="text" value="@ViewBag.SearchString" class="form-control" name="searchString" placeholder="Nhập tên khóa học" />
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                }*@
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Giá</th>
+                                <th>Phần trăm</th>
+                                <th>Số học viên</th>
+                                <th>Ngày thanh toán</th>
+                                <th>Tổng lương</th>
+                                <th>Thanh toán</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr id="row_@item.SalaryID">
+                                    <td>@item.Cost</td>
+                                    <td>@item.Percent</td>
+                                    <td>@item.CountUser</td>
+                                    <td>@item.CreatedDate</td>
+                                    <td>@item.SalaryTotal</td>
+                                    <td>@item.payment</td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+
+                    @Html.PagedListPager(Model, page => Url.Action("History", new { page, @searchString = @ViewBag.SearchString }))
+                </div>
+                <!-- /.table-responsive -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-6 -->
+</div>
+<!-- /.row -->

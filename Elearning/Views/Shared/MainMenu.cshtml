@@ -1,0 +1,11 @@
+﻿@model List<Model.EF.Menu>
+<div class="w3ls_logo_products_left1">
+
+    <ul class="special_items">
+        @foreach (var item in Model)
+            {
+            <li><a href="@item.Link" target="@item.Target">@item.Text</a><i>/</i></li>
+        }
+    </ul>
+
+</div>

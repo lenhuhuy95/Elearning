@@ -1,0 +1,100 @@
+﻿@model PagedList.IPagedList<Model.ViewModel.UserCourse_User>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "ListUserCourses";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section jsFooter{
+    
+<script src="~/Assets/admin/js/controller/userCourseControllerChangeStatus.js"></script>
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Course
+        <small>Control panel</small>
+        @*<a href="/Admin/Course/Create" class="btn btn-default">Thêm Mới</a>*@
+    </h1>
+    <br />
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Course</a></li>
+        <li class="active">Course List</li>
+    </ol>
+</section>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Danh sách học viên
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+                <!-- Form tìm kiếm cho Course -->
+                @*@using (Html.BeginForm("ListCourses", "Course", FormMethod.Get))
+                    {
+                        <div class="row form-group">
+                            <div class="col-lg-12">
+                                <div class="col-md-4">
+                                    <input type="text" value="@ViewBag.SearchString" class="form-control" name="searchString" placeholder="Nhập tên khoá học" />
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>Tìm kiếm</button>
+                                </div>
+                            </div>
+                        </div>
+                    }*@
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tên học viên</th>
+                                <th>Số điện thoại</th>
+                                <th>Email</th>
+                                <th>Ngày tham gia lớp</th>
+                                <th style="width: 90px;">Trạng thái</th>
+                                <th style="width: 120px;">Xóa học viên</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                
+                                <tr id="row_@item.ID">
+                                    <td>@item.Name</td>
+                                    <td>@item.Phone</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.DateJoin</td>
+                                    <!-- Trong Class phải có btn-active truyền từ Script ChangeStatus-->
+                                    <td><button type="button" class="btn btn-block btn-warning btn-sm btn-active" data-idusercourse1="@item.ID">@(item.Status ? "Kích hoạt" : "Khóa")</button></td>
+
+                                    <td>
+                                        <button type="button" class="btn btn-default">
+                                            @Ajax.ActionLink("Xoá Học viên", "DeleteUserCourse", new { @id = @item.ID }, new AjaxOptions
+                                       {
+                                           Confirm = "Bạn chắc chắn muốn xoá học viên này?",
+                                           OnComplete = "$('#row_" + @item.ID + "').remove()",
+                                           HttpMethod = "Delete"
+                                       })
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                    @Html.PagedListPager(Model, page => Url.Action("ListUserCourses", new { page, @searchString = @ViewBag.SearchString }))
+                </div>
+                <!-- /.table-responsive -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-6 -->
+</div>
+<!-- /.row -->

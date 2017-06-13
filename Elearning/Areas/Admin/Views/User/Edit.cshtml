@@ -1,0 +1,90 @@
+﻿@model Model.EF.User
+
+@{
+    ViewBag.Title = "ListUser";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <!-- left column -->
+    <div class="col-md-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h1 class="box-title">Chỉnh sửa thông tin người dùng.</h1>
+                <br />
+                <br />
+                @using (Html.BeginForm("Edit", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    @Html.HiddenFor(model => model.UserID) <!-- Truyền UserID bằng thuộc tính HiddenFor cho Controller nhận được ID -->
+                    @*@Html.Hidden("UserID")*@
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.UserName)
+
+                        @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+
+                    </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PassWord)
+
+                                @Html.PasswordFor(model => model.PassWord, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.PassWord, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Name)
+
+                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Address)
+                        
+                                @Html.TextAreaFor(model => model.Address, new { @class = "form-control", rows = "3" })
+                                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+
+                            </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Email)
+                                    
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Phone)
+
+                                    @Html.TextBoxFor(model => model.Phone,new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Image)
+                                    <input type="file" name="file" id="file" />
+                                    <input style="width:300px;height:300px;" src="~/Avatar/@Model.Image" type="image" />
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="box-footer">
+                                        <input type="submit" value="Cập nhật" class="btn btn-primary" />
+                                    </div>
+                                </div>
+
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+

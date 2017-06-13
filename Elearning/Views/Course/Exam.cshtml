@@ -1,0 +1,112 @@
+﻿@model Elearning.Models.ListAnswer
+@{
+    ViewBag.Title = "Exam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var question = (List<Model.EF.Question>)ViewBag.Question;
+    var questionofexam = (List<Model.EF.ExamQuestion>)ViewBag.listques;
+    var exam = (Model.EF.Exam)ViewBag.Exam;
+}
+
+@{
+    int dem = 1;
+}
+<html>
+<body>
+    <div class="container">
+
+        <div style="text-align:center" id="display">
+
+        </div>
+        @*<div class="col-lg-offset-6" id="submitted">
+
+            </div>*@
+        <script>
+            function CountDown(duration, display) {
+                if (!isNaN(duration)) {
+                    var timer = duration, minutes, seconds;
+
+                    var interVal = setInterval(function () {
+                        minutes = parseInt(timer / 60, 10);
+                        seconds = parseInt(timer % 60, 10);
+
+                        minutes = minutes < 10 ? "0" + minutes : minutes;
+                        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                        $(display).html("<b>" + minutes + "m : " + seconds + "s" + "</b>");
+                        if (--timer < 0) {
+                            timer = duration;
+                            SubmitFunction();
+                            $('#display').empty();
+                            clearInterval(interVal)
+                        }
+                    }, 1000);
+                }
+            }
+
+            function SubmitFunction() {
+                //$('#submitted').html('submitted');
+                //top.location.href = "/Course/ShowDiem";
+                document.getElementById("myForm").submit();
+            }
+
+            CountDown(@exam.Time, $('#display'));
+        </script>
+
+        <br />
+        @using (Html.BeginForm("Exam", "Course", FormMethod.Post, new { id = "myForm" }))
+            {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div style="background:#add8e6; padding-left:10px;">
+                @foreach (var item in question)
+                {
+                    foreach (var item2 in questionofexam)
+                    {
+                        if (item.QuestionID == item2.QuestionID)
+                        {
+                            <p><strong>Câu @dem: @item.Ques</strong></p>
+
+                            @Html.HiddenFor(m => m.Answerrr[dem - 1].QuesID, new { Value = @item.QuestionID })
+                            @Html.HiddenFor(m => m.Answerrr[dem - 1].ExamID, new { Value = exam.ExamID })
+                            @Html.HiddenFor(m => m.Answerrr[dem - 1].CourseID, new { Value = @item.CourseID })
+
+                            <div class="radio">
+                                <label>
+                                    @Html.RadioButtonFor(m => m.Answerrr[dem - 1].Answer1, "A") <span>@item.Option1</span>
+                                </label>
+                            </div>
+
+                                <div class="radio">
+                                    <label>
+                                        @Html.RadioButtonFor(m => m.Answerrr[dem - 1].Answer1, "B") <span>@item.Option2</span>
+                                    </label>
+                                </div>
+
+                                <div class="radio">
+                                    <label>
+                                        @Html.RadioButtonFor(m => m.Answerrr[dem - 1].Answer1, "C") <span>@item.Option3</span>
+                                    </label>
+                                </div>
+
+                                <div class="radio">
+                                    <label>
+                                        @Html.RadioButtonFor(m => m.Answerrr[dem - 1].Answer1, "D") <span>@item.Option4</span>
+                                    </label>
+                                </div>
+                            dem++;
+                            <br />
+                        }
+                    }
+
+                }
+            </div>
+            <br />
+            <div style="text-align:center">
+                <input type="submit" class="btn-success" value="Nộp bài" />
+            </div>
+            <br />
+        }
+    </div>
+</body>
+</html>

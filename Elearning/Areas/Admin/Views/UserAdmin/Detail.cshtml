@@ -1,0 +1,123 @@
+﻿@model PagedList.IPagedList<Model.EF.Course>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    int[] CountUser = ViewBag.CountUser;
+    float Tong = ViewBag.Tong;
+    var groupAdmin = ViewBag.GroupAdmin;
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Admin
+        <small>List Admin</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Admin</a></li>
+        <li class="active">List Admin</li>
+    </ol>
+</section>
+
+@using (Html.BeginForm("Detail", "UserAdmin", FormMethod.Get))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Chi tiết admin salary</h4>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+
+                    <!-- Form tìm kiếm cho Course -->
+                    @using (Html.BeginForm("Detail", "UserAdmin", FormMethod.Get))
+                {
+                        <div class="row form-group">
+                            <div class="col-lg-12">
+                                <div class="col-md-4">
+                                    <input type="text" value="@ViewBag.SearchString" class="form-control" name="searchString" placeholder="Nhập tên khóa học" />
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>Tìm kiếm</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tên khóa học</th>
+                                    <th>Giá</th>
+                                    <th>Phần trăm</th>
+                                    <th>Số học viên mới đăng ký</th> @*đã trừ các số học viên đã thanh toán các lần trước*@
+                                    <th>Quy đổi</th>
+                                    <th style="width: 130px;">Lịch sử</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{ int i = 0;}
+                                @foreach (var item in Model)
+                                {
+                                    <tr id="row_@item.CourseID">
+                                        <td><a href="/Admin/UserAdmin/History/@item.CourseID"> @item.CourseName</a></td>
+                                        <td>@item.Cost</td>
+                                        <td>@item.Percent</td>
+                                        <td>@CountUser[i]</td>
+                                        <td>@((CountUser[i] * item.Cost * item.Percent) / 100)</td>
+
+                                        <td><a href="/Admin/UserAdmin/History/@item.CourseID" class="btn btn-block btn-success btn-flat">Lịch sử thanh toán</a></td>
+                                        @{ i++;}
+                                    </tr>
+                                            }
+                                @{i = 0;}
+                            </tbody>
+                        </table>
+
+                        @Html.PagedListPager(Model, page => Url.Action("Detail", new { page, @searchString = @ViewBag.SearchString }))
+
+                        <div class="box box-warning">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Thống kê</h3>
+                            </div>
+                            <div class="box-body">
+                                <form role="form"></form>
+
+                                <div class="form-group">
+
+                                    <h3>Số môn đảm nhiệm: @Model.Count</h3>
+                                    <h3>Tổng: @Tong </h3>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        @if (groupAdmin == "ADMIN" || groupAdmin == "MOD")
+                        {
+                            foreach (var item in Model)
+                            {
+                                <input type="button" class="btn btn-success" title="Submit" value="Thanh toán lương" onclick="location.href='@Url.Action("InsertSalary", "UserAdmin", new { adminid = item.Instructed })'" />
+                                break;
+                            }
+                        }                     
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-6 -->
+    </div>
+    <!-- /.row -->
+                                    }
+

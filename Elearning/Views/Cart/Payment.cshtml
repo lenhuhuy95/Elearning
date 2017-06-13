@@ -1,0 +1,94 @@
+﻿@model List<Elearning.Models.CartItem>
+@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var moneyUnit = (List<Model.EF.Money>)ViewBag.MoneyUnit;
+}
+
+<div class="products-breadcrumb">
+    <div class="container">
+        <ul>
+            <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">Shopping Cart</a><span>|</span></li>
+            <li><h3>Shopping Cart</h3></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    @if (Model.Count > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <td style="width: 5px;"></td>
+                    <td></td>
+                    <td></td>
+                    @*<td></td>*@
+                </tr>
+            </thead>
+            <tbody class="top-cart">
+                @foreach (var item in Model)
+                {
+                    var url = "/chi-tiet/" + item.Course.MetaTitle + "-" + item.Course.CourseID;
+                    <tr>
+                        <td><a href="@url"><img src="@item.Course.Image" width="100" /></a></td>
+                        <td><a href="@url"><strong>@item.Course.CourseName</strong></a></td>
+                        @foreach (var item1 in moneyUnit)
+                        {
+                            if (item.Course.MoneyID == item1.MoneyID)
+                            {
+                                <td><strong>@item.Course.Cost.GetValueOrDefault(0).ToString("N0") @item1.Unit</strong></td>
+                            }
+                        }
+                        @*<td><a href="#" data-id="@item.Course.CourseID" class="btn-delete btn-default" style="color:red">Xóa</a></td>*@
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    <div class="section group">
+        <div style="text-align:center"><strong>Chọn 1 trong 2 phương thức</strong></div>
+        <br />
+        <div class="col-md-6">
+            @using (Html.BeginForm("Payment", "Cart", FormMethod.Post))
+            {
+                <div class="form-group">
+                    <label>Người nhận</label>
+                    <input name="shipName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Điện thoại</label>
+                    <input name="mobile" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Địa chỉ</label>
+                    <input name="address" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input name="email" class="form-control" />
+                </div>
+                <button type="submit" class="btn">Gửi đơn hàng</button>
+            }
+        </div>
+
+        <div class="col-md-6">
+            <div>Bạn c&oacute; thể đến bất kỳ ng&acirc;n h&agrave;ng n&agrave;o ở Việt Nam (hoặc sử dụng Internet Banking) để chuyển tiền theo th&ocirc;ng tin b&ecirc;n dưới:</div>
+            <ul>
+                <li>Số t&agrave;i khoản: <strong>0711000240659</strong></li>
+                <li>T&ecirc;n t&agrave;i khoản: <strong>CTCP GIAO DUC TRUC TUYEN TUONG LAI</strong></li>
+                <li>Ng&acirc;n h&agrave;ng: <strong>Ng&acirc;n h&agrave;ng Vietcombank, chi nh&aacute;nh H&agrave; Nội - Thanh Xu&acirc;n</strong></li>
+            </ul>
+            <p style="text-align: center; font-size: 15px;">Lưu &yacute; khi chuyển khoản:</p>
+            <ul>
+                <li>Tại mục "Ghi ch&uacute;" khi chuyển khoản, bạn ghi r&otilde;: Số điện thoại - Họ T&ecirc;n - Email đăng k&yacute; học - M&atilde; qu&agrave; tặng (nếu c&oacute;)</li>
+                <li>V&iacute; dụ: 0987654321 - L&ecirc; Như Huy - lenhuhuy1995@gmail.com</li>
+            </ul>
+            <p class="small"><em>Ch&uacute; &yacute;: 1. Tiền sẽ được nạp v&agrave;o t&agrave;i khoản của qu&yacute; kh&aacute;ch sau tối đa 24h kể từ khi ch&uacute;ng t&ocirc;i nhận được chuyển khoản.</em></p>
+        </div>
+
+    </div>
+</div>
+
+

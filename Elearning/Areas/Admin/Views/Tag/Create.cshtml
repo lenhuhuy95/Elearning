@@ -1,0 +1,71 @@
+﻿@model Model.EF.Tag
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Course
+        <small>Control panel</small>
+    </h1>
+    <br />
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Course</a></li>
+        <li class="active">Tag</li>
+    </ol>
+</section>
+
+<div class="row">
+
+    <!-- left column -->
+    <div class="col-md-5">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Thêm Thẻ</h3>
+                <div role="form">
+                    <div class="box-body">
+
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.TagName)
+
+                                @Html.TextBoxFor(model => model.TagName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.TagName, "", new { @class = "text-danger" })
+
+                            </div>
+
+                                <div class="form-group">
+                                    <div class="box-footer">
+                                        <input type="submit" value="Thêm thẻ" class="btn btn-primary" />
+                                    </div>
+                                </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <form>
+                    @{ Html.RenderAction("ListTag", "Tag");} <!-- Gọi (Show) dữ liệu từ trang View ListTag -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+

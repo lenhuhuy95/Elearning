@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DE9160C-B4A3-4F34-AD5C-268723BA776E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dao\AdminDao.cs" />
+    <Compile Include="Dao\AdminGroupDao.cs" />
+    <Compile Include="Dao\CategoryDao.cs" />
+    <Compile Include="Dao\CourseCategoryDao.cs" />
+    <Compile Include="Dao\CourseDao.cs" />
+    <Compile Include="Dao\CourseTagDao.cs" />
+    <Compile Include="Dao\ExamDao.cs" />
+    <Compile Include="Dao\LectureDao.cs" />
+    <Compile Include="Dao\MenuDao.cs" />
+    <Compile Include="Dao\MoneyDao.cs" />
+    <Compile Include="Dao\OrderDao.cs" />
+    <Compile Include="Dao\OrderDetailDao.cs" />
+    <Compile Include="Dao\QuestionDao.cs" />
+    <Compile Include="Dao\RelatedCoursDao.cs" />
+    <Compile Include="Dao\SalaryDao.cs" />
+    <Compile Include="Dao\ScoreDao.cs" />
+    <Compile Include="Dao\SectionDao.cs" />
+    <Compile Include="Dao\SelectFileDao.cs" />
+    <Compile Include="Dao\SlideDao.cs" />
+    <Compile Include="Dao\TagDao.cs" />
+    <Compile Include="Dao\UserDao.cs" />
+    <Compile Include="EF\Admin.cs" />
+    <Compile Include="EF\AdminGroup.cs" />
+    <Compile Include="EF\Answer.cs" />
+    <Compile Include="EF\Assignment.cs" />
+    <Compile Include="EF\Cart.cs" />
+    <Compile Include="EF\Comment.cs" />
+    <Compile Include="EF\Course.cs" />
+    <Compile Include="EF\CourseCategory.cs" />
+    <Compile Include="EF\CourseTag.cs" />
+    <Compile Include="EF\Credential.cs" />
+    <Compile Include="EF\ElearningDbContext.cs" />
+    <Compile Include="EF\Exam.cs" />
+    <Compile Include="EF\ExamQuestion.cs" />
+    <Compile Include="EF\Footer.cs" />
+    <Compile Include="EF\Lecture.cs" />
+    <Compile Include="EF\Menu.cs" />
+    <Compile Include="EF\MenuType.cs" />
+    <Compile Include="EF\Money.cs" />
+    <Compile Include="EF\Order.cs" />
+    <Compile Include="EF\OrderDetail.cs" />
+    <Compile Include="EF\Question.cs" />
+    <Compile Include="EF\RelatedCours.cs" />
+    <Compile Include="EF\Role.cs" />
+    <Compile Include="EF\Salary.cs" />
+    <Compile Include="EF\Score.cs" />
+    <Compile Include="EF\Section.cs" />
+    <Compile Include="EF\Slide.cs" />
+    <Compile Include="EF\StudentAnswer.cs" />
+    <Compile Include="EF\SubmitFile.cs" />
+    <Compile Include="EF\Tag.cs" />
+    <Compile Include="EF\User.cs" />
+    <Compile Include="EF\User_Course.cs" />
+    <Compile Include="EF\WishList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\CategoryView.cs" />
+    <Compile Include="ViewModel\CourseCategoryView.cs" />
+    <Compile Include="ViewModel\CourseTag_Tag.cs" />
+    <Compile Include="ViewModel\DetailOrder_Course.cs" />
+    <Compile Include="ViewModel\ListScore.cs" />
+    <Compile Include="ViewModel\Score.cs" />
+    <Compile Include="ViewModel\UserCourse_User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\PagedList.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{6e97dcdf-2bbe-4663-8c95-bebab675b8a7}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

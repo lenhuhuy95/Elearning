@@ -1,0 +1,168 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var slides = (List<Model.EF.Slide>)ViewBag.Slides; <!-- Ép kiểu ViewBag về List -->
+    var listNewCourse = (List<Model.EF.Course>)ViewBag.ListNewCourses;
+    var listTopCourse = (List<Model.EF.Course>)ViewBag.ListTopCourses;
+    var moneyUnit = (List<Model.EF.Money>)ViewBag.MoneyUnit;
+}
+
+<div class="banner">
+    <div class="w3l_banner_nav_left">
+        <nav class="navbar nav_bottom">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2">
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Dùng RenderAction để Show chuyên mục -->
+            @{ Html.RenderAction("CourseCategory", "Course");}
+
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
+    <div class="w3l_banner_nav_right">
+        <section class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <!-- Dùng vòng For hiện Slide sử dụng ViewBag (slides đã đc ép kiểu List<> ViewBag) -->
+                    @foreach (var item in slides)
+                    {
+                        <li>
+                            <div>
+                                <img src="@item.Image" height="500" width="800" />
+                                <div class="more">
+                                    <a href="@item.Link" class="button--saqui button--round-l button--text-thick" data-text="Elearning now">Elearning</a>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </section>
+        <!-- flexSlider -->
+        <link rel="stylesheet" href="/assets/client/css/flexslider.css" type="text/css" media="screen" property="" />
+        <script defer src="/assets/client/js/jquery.flexslider.js"></script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    start: function (slider) {
+                        $('body').removeClass('loading');
+                    }
+                });
+            });
+        </script>
+        <!-- //flexSlider -->
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<!-- banner -->
+<!-- top-brands -->
+<div class="top-brands">
+    <div class="container">
+        <h3>New Courses</h3>
+        <div class="agile_top_brands_grids">
+
+            <!-- Dùng vòng For hiện danh sách New khoá học sử dụng ViewBag (listNewCourse đã đc ép kiểu List<> ViewBag.ListNewCourses) -->
+            @foreach (var item in listNewCourse)
+            {
+                var url = "/chi-tiet/" + item.MetaTitle + "-" + item.CourseID;
+                <div class="col-md-3 top_brand_left">
+                    <div class="hover14 column">
+                        <div class="agile_top_brand_left_grid">
+                            @*<div class="tag"><img src="@url" alt="@item.CourseName" class="img-responsive" /></div>*@
+                            <div class="agile_top_brand_left_grid1">
+                                <figure>
+                                    <div class="snipcart-item block">
+                                        <div class="snipcart-thumb">
+                                            <a href="@url"><img title="@item.MetaTitle " alt="@item.CourseName " src="@item.Image" width="237" height="140" /></a>
+                                            <h4 style="padding-top: 10px">@item.CourseName</h4>
+                                            <h6 style="padding-top: 10px">@item.Description</h6>
+                                            <br />
+                                            @foreach (var item1 in moneyUnit)
+                                            {
+                                                if (item.MoneyID == item1.MoneyID)
+                                                {
+                                                    <h4>@(item.Cost.HasValue ? item.Cost.Value.ToString("N0") + " " + @item1.Unit : "Free") <span>@(item.PromotionCost.HasValue ? item.PromotionCost.Value.ToString("N0") + " " + @item1.Unit : " ")</span></h4>
+                                                }
+                                            }
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details">
+                                            <form action="/them-gio-hang?courseId=@item.CourseID" method="post">
+                                                <fieldset>
+                                                    <input type="submit" name="submit" value="Add to cart" class="button" />
+                                                    @*<h4><a href="/gio-hang?courseId=@item.CourseID">Thêm vào giỏ</a></h4>*@
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //top-brands -->
+<!-- fresh-vegetables -->
+<div class="fresh-vegetables">
+    <div class="container">
+        <h3>Top Courses</h3>
+        <div class="w3l_fresh_vegetables_grids">
+
+            <!-- Dùng vòng For hiện danh sách Top khoá học sử dụng ViewBag (listTopCourse đã đc ép kiểu List<> ViewBag.listTopCourse) -->
+            @foreach (var item in listTopCourse)
+            {
+                var url = "/chi-tiet/" + item.MetaTitle + "-" + item.CourseID;
+                <div class="col-md-3 top_brand_left">
+                    <div class="hover14 column">
+                        <div class="agile_top_brand_left_grid">
+                            @*<div class="tag"><img src="@url" alt="@item.CourseName" class="img-responsive" /></div>*@
+                            <div class="agile_top_brand_left_grid1">
+                                <figure>
+                                    <div class="snipcart-item block">
+                                        <div class="snipcart-thumb">
+                                            <a href="@url"><img title="@item.MetaTitle " alt="@item.CourseName " src="@item.Image" width="237" height="140" /></a>
+                                            <h4 style="padding-top: 10px">@item.CourseName</h4>
+                                            <h6 style="padding-top: 10px">@item.Description</h6>
+                                            <br />
+                                            @foreach (var item1 in moneyUnit)
+                                            {
+                                                if (item.MoneyID == item1.MoneyID)
+                                                {
+                                                    <h4>@(item.Cost.HasValue ? item.Cost.Value.ToString("N0") + " " + @item1.Unit : "Free") <span>@(item.PromotionCost.HasValue ? item.PromotionCost.Value.ToString("N0") + " " + @item1.Unit : " ")</span></h4>
+                                                }
+                                            }
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details">
+                                            <form action="/them-gio-hang?courseId=@item.CourseID" method="post">
+                                                <fieldset>
+                                                    <input type="submit" name="submit" value="Add to cart" class="button" />
+                                                    @*<h4><a href="/gio-hang?courseId=@item.CourseID">Thêm vào giỏ</a></h4>*@
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //fresh-vegetables -->

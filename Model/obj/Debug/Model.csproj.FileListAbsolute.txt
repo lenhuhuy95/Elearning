@@ -1,0 +1,630 @@
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning\Model\obj\Debug\Model.pdb
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll.config
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\Model.pdb
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\obj\Debug\Model.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\obj\Debug\Model.pdb
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Mvc.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update2\Elearning\Model\obj\Debug\Model.pdb
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll.config
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Model.pdb
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Mvc.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\obj\Debug\Model.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.3\Elearning_Update2\Elearning\Model\obj\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Mvc.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8.3\Elearning_Update2\Elearning\Model\obj\Debug\Model.pdb
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll.config
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Model.pdb
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Mvc.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\obj\Debug\Model.dll
+C:\Users\DELLL\Downloads\New folder\Elearning_Update8.4\Elearning_Update8.3\Elearning_Update2\Elearning\Model\obj\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\obj\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\obj\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll.config
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Model.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.xml
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.xml
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Mvc.xml
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.xml
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.Razor.xml
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.xml
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\obj\Debug\Model.dll
+F:\TieuLuan\Project\Elearning_Update8-5-3\Elearning_Update8-5-2\Elearning_Update8-4-1\Elearning_Update2\Elearning\Model\obj\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\System.Web.WebPages.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\System.Web.Razor.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\System.Web.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\System.Web.WebPages.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\System.Web.Razor.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\System.Web.WebPages.Razor.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-4\Elearning\Model\obj\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\obj\Debug\Model.dll
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\obj\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\Model.dll.config
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\Model.dll
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\EntityFramework.dll
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\PagedList.dll
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\EntityFramework.xml
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\PagedList.xml
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+F:\TieuLuan\Project\Elearning_Update8-5-8\Elearning_Update8-5-4\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN\VS15_Project_Elearning\Elearning_Update3\Elearning_Update8-5-9\Elearning\Model\obj\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\Model.dll.config
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\EntityFramework.dll
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\PagedList.dll
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\EntityFramework.xml
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\PagedList.xml
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\obj\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-2-3\Elearning\Model\obj\Debug\Model.pdb
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning\Model\obj\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\Model.dll.config
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\EntityFramework.dll
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\PagedList.dll
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\EntityFramework.xml
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\PagedList.xml
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\obj\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\obj\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\Common.dll
+F:\TieuLuan\Project\Elearning-Up-2-5\Elearning\Model\bin\Debug\Common.pdb
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\Common.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\Common.pdb
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning\Model\obj\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\Model.dll.config
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\Common.dll
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\EntityFramework.dll
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\PagedList.dll
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\Common.pdb
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\EntityFramework.xml
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\PagedList.xml
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\obj\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-2-8\Elearning\Model\obj\Debug\Model.pdb
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\Common.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\Common.pdb
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN-UPDATE\Elearning-Up-2-4\Elearning-Up-2-6\Elearning-Up-2-9\Elearning\Model\obj\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\Model.dll.config
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\Common.dll
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\EntityFramework.dll
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\PagedList.dll
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\Common.pdb
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\EntityFramework.xml
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\PagedList.xml
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\obj\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-3-2\Elearning\Model\obj\Debug\Model.pdb
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\Common.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\Common.pdb
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning\Model\obj\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\Model.dll.config
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\Common.dll
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\EntityFramework.dll
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\PagedList.dll
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\Common.pdb
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\EntityFramework.xml
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\PagedList.xml
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\obj\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-4\Elearning\Model\obj\Debug\Model.pdb
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\Common.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\Common.pdb
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning\Model\obj\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\Model.dll.config
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\Model.pdb
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\Common.dll
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\EntityFramework.dll
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\PagedList.dll
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\Common.pdb
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\EntityFramework.xml
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\PagedList.xml
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\obj\Debug\Model.dll
+F:\TieuLuan\Project\Elearning-Up-4-2\Elearning\Model\obj\Debug\Model.pdb
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\Model.dll.config
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\Model.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\Model.pdb
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\Common.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\PagedList.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\Common.pdb
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\PagedList.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\obj\Debug\Model.dll
+D:\HK1_N4\TLCN_UPDATE1\Elearning-Up-3-3\Elearning-Up-4-1\Elearning-up-4-4\Elearning\Model\obj\Debug\Model.pdb
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\Model.dll.config
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\Model.dll
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\Model.pdb
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\Common.dll
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\EntityFramework.dll
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\PagedList.dll
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\Common.pdb
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\EntityFramework.xml
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\PagedList.xml
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\obj\Debug\Model.dll
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\obj\Debug\Model.pdb
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\EPPlus.dll
+C:\Users\DELLLL\Downloads\Elearning-Up-4-5\Elearning\Model\bin\Debug\EPPlus.xml
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\Model.dll.config
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\Model.dll
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\Model.pdb
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\Common.dll
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\EntityFramework.dll
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\EPPlus.dll
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\PagedList.dll
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\Common.pdb
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\EntityFramework.xml
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\EPPlus.xml
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\PagedList.xml
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\obj\Debug\Model.dll
+C:\Users\lenhu\Desktop\Elearning-Up-4-5\Elearning-Up-4-5\Elearning\Model\obj\Debug\Model.pdb
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\Model.dll.config
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\Model.dll
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\Model.pdb
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\Common.dll
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\EPPlus.dll
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\PagedList.dll
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\Common.pdb
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\EPPlus.xml
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\PagedList.xml
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\obj\Debug\Model.dll
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\obj\Debug\Model.pdb
+D:\TieuLuan\Project\Elearning-4.6.1\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\Model.dll.config
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\Model.dll
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\Model.pdb
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\Common.dll
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\EntityFramework.dll
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\EPPlus.dll
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\PagedList.dll
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\Common.pdb
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\EntityFramework.xml
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\EPPlus.xml
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\PagedList.xml
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\obj\Debug\Model.dll
+E:\KLTN\Elearning-4.6.2\Elearning-4.6.1\Elearning\Model\obj\Debug\Model.pdb
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\Model.dll.config
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\Model.dll
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\Model.pdb
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\Common.dll
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\EPPlus.dll
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\PagedList.dll
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\Common.pdb
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\EPPlus.xml
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\PagedList.xml
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\obj\Debug\Model.dll
+D:\TieuLuan\Project\Elearning-4.6.5\Elearning\Model\obj\Debug\Model.pdb
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\Model.dll.config
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\Model.dll
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\Model.pdb
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\Common.dll
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\EntityFramework.dll
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\EPPlus.dll
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\PagedList.dll
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\Common.pdb
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\EntityFramework.xml
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\EPPlus.xml
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\PagedList.xml
+E:\KLTN\Elearning-4.6.6\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+E:\KLTN\Elearning-4.6.6\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\KLTN\Elearning-4.6.6\Elearning\Model\obj\Debug\Model.dll
+E:\KLTN\Elearning-4.6.6\Elearning\Model\obj\Debug\Model.pdb
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\Model.dll.config
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\Model.dll
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\Model.pdb
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\Common.dll
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\EPPlus.dll
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\PagedList.dll
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\Common.pdb
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\EPPlus.xml
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\PagedList.xml
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\obj\Debug\Model.dll
+D:\TieuLuan\Project\Elearning-4.6.7\Elearning-4.6.6\Elearning\Model\obj\Debug\Model.pdb
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\Model.dll.config
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\Model.dll
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\Model.pdb
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\Common.dll
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\EntityFramework.dll
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\EPPlus.dll
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\PagedList.dll
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\Common.pdb
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\EntityFramework.xml
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\EPPlus.xml
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\PagedList.xml
+E:\KLTN\Elearning-4.6.8\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+E:\KLTN\Elearning-4.6.8\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\KLTN\Elearning-4.6.8\Elearning\Model\obj\Debug\Model.dll
+E:\KLTN\Elearning-4.6.8\Elearning\Model\obj\Debug\Model.pdb
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\Model.dll.config
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\Model.dll
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\Model.pdb
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\Common.dll
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\EntityFramework.dll
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\EPPlus.dll
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\PagedList.dll
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\Common.pdb
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\EntityFramework.xml
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\EPPlus.xml
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\PagedList.xml
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\obj\Debug\Model.dll
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\obj\Debug\Model.pdb
+D:\TieuLuan\Project\Elearning-4.6.8\Elearning-4.6.8\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\Model.dll.config
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\Model.dll
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\Model.pdb
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\Common.dll
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\EntityFramework.dll
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\EPPlus.dll
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\PagedList.dll
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\PagedList.Mvc.dll
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\Common.pdb
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\EntityFramework.xml
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\EPPlus.xml
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\PagedList.xml
+E:\KLTN\Elearning-4.6.9\Elearning\Model\bin\Debug\PagedList.Mvc.xml
+E:\KLTN\Elearning-4.6.9\Elearning\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\KLTN\Elearning-4.6.9\Elearning\Model\obj\Debug\Model.dll
+E:\KLTN\Elearning-4.6.9\Elearning\Model\obj\Debug\Model.pdb

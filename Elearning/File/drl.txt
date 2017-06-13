@@ -1,0 +1,97 @@
+﻿E1 - Hội thi Olympic các môn khoa học Mác - Lênin và tư tưởng Hồ Chí Minh cấp Đảng bộ khối năm 2016
+E2 - Hội thi Tìm hiểu pháp luật năm 2016
+E3 - Cuộc thi An toàn giao thông "Hạnh phúc của mỗi nhà"
+E4 - Cuộc thi Ánh sáng soi đường năm 2017
+E5 - Hội trại truyền thống Khoa CNTT  (Phan Thiết - tháng 10 năm 2016)
+E6 - Lễ tri ân thầy cô Khoa CNTT
+E7 -  Hội thi "Người là niềm tin tất thắng" năm 2017
+E8 - Cuộc Thi IT Sáng Tạo
+E9 - Lễ Khởi động Tháng Thanh niên
+E10 - Cuộc Thi IT vào bếp
+E11 - Hội thi Tìm hiểu Lịch sử Đoàn TNCS Hồ Chí Minh
+E12 - Chương trình Văn nghệ chào mừng 60 năm ngày thành lập Hội Liên hiệp Thanh niên Việt Nam
+E13 - Cuộc thi Tôi yêu màu áo Thanh niên Việt Nam
+E14 - Lễ kỉ niệm ngày thành Đoàn TNCS Hồ Chí Minh 26/3/1931 - 26/3/2017
+E15 -  Ngày Hội pháp luật nước Cộng Hòa Xã hội Chủ nghĩa Việt Nam (trường CĐ Công nghệ Thủ Đức)
+
+F1- Hội thi Tìm hiểu pháp luật năm 2016
+F2 - Cuộc thi An toàn giao thông "Hạnh phúc của mỗi nhà"
+F3 - Hội trại truyền thống Khoa CNTT  (Phan Thiết - tháng 10 năm 2016)
+F4 - Cuộc thi Ánh sáng soi đường năm 2017
+f5 - Hội thi "Người là niềm tin tất thắng" năm 2017
+F6 - Cuộc Thi IT Sáng Tạo
+F7 -  Hội thi Tìm hiểu Lịch sử Đoàn TNCS Hồ Chí Minh
+F8 -  Cuộc thi Tôi yêu màu áo Thanh niên Việt Nam
+F9 - Lễ kỉ niệm ngày thành Đoàn TNCS Hồ Chí Minh 26/3/1931 - 26/3/2017
+F10 - Chương trình Văn nghệ chào mừng 60 năm ngày thành lập Hội Liên hiệp Thanh niên Việt Nam
+F11 - Ngày Hội pháp luật nước Cộng Hòa Xã hội Chủ nghĩa Việt Nam (trường CĐ Công nghệ Thủ Đức)
+F12 -  Cuộc Thi IT Vào bếp
+F13 - Hội thi Olympic các môn khoa học Mác - Lênin và tư tưởng Hồ Chí Minh cấp Đảng bộ khối năm 2016
+F14 - Lễ Khởi động Tháng Thanh niên
+
+G1 - Hội trại truyền thống Khoa CNTT  (Phan Thiết - tháng 10 năm 2016)
+G2 - Cuộc Thi IT Sáng Tạo, Cuộc Thi IT Vào bếp
+G3 - Gặp mặt cựu sinh viên
+G4 - Lễ tri ân thầy cô khoa CNTT
+G5 - Ngày hội mở
+G6 - Trung Thu Yêu Thương (các chi đoàn khóa 2015)
+G7 - Cuộc Thi IT Vào bếp
+G8 - Cuộc Thi IT Sáng Tạo
+
+H1 - Hoàn thành
+
+I1 - Đã Hoàn thành
+
+J1 - Có tham gia
+
+K1 - Đạt
+
+L1 - Không là Cảm tình Đảng và Đảng viên
+L2 - Là Cảm tình Đảng
+L3 - Là Đảng viên
+
+M1 - Xếp loại khá
+M2 - Xếp loại TB
+M3 - Xếp loại giỏi
+
+Q1 - Chương trình Trung thu yêu thương
+Q2 - Chương trình Noel ấm áp, Q1
+Q3 - Chiến dịch tình nguyện Xuân tình nguyện 2016
+Q4 - Chương trình Tiếp sức mùa thi 2016
+Q5 - Chiến dịch tình nguyện Mùa hè xanh 2016
+
+S1 - Văn hóa, văn nghệ (Hội diễn văn nghệ khoa CNTT và lễ tri ân thầy cô)
+
+T1 - Văn hóa, văn nghệ
+T2 - Thể thao
+
+U1 - Văn hóa, văn nghệ (Hội diễn văn nghệ khoa CNTT và lễ tri ân thầy cô)
+
+V1 - Văn hóa, văn nghệ
+V2 - Thể thao
+
+W1 - Văn hóa, văn nghệ
+W2 - Thể thao
+
+X1 - Văn hóa, văn nghệ
+X2 - Thể thao
+
+Y2 - Thể thao
+Y1 - Văn hóa, văn nghệ
+
+Z1 - Văn hóa, văn nghệ
+Z2 - Thể thao
+
+
+AA1 - Văn hóa, văn nghệ
+AA2 - Thể thao
+
+AB1 - Có
+
+AC1 - Có
+
+AD1 - Có
+
+AE1 - Có
+
+LEN(E2)-LEN(SUBSTITUTE(E2,"E1",""))

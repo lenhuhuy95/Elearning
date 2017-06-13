@@ -1,0 +1,81 @@
+﻿@model Elearning.Models.ListAnswer
+@{
+    ViewBag.Title = "ShowDiem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var score = ViewBag.Score;
+    var question = (List<Model.EF.Question>)ViewBag.Question;
+    var questionofexam = (List<Model.EF.ExamQuestion>)ViewBag.listques;
+    var answer = (List<Model.EF.Answer>)ViewBag.Answer;
+}
+
+<head>
+    <style>
+        #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            padding-left: 10px;
+            /*text-align: center;*/
+            background-color: lightblue;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+
+@{
+    int dem = 1;
+}
+
+<div class="container">
+    <div>
+        <p style="text-align:center"><strong>Số câu đúng của bạn: @score.Score1</strong></p>
+        <br />
+    </div>
+    <div style="text-align:center">
+        <button class="btn-success" onclick="myFunction()">Xem bài làm</button>
+    </div>
+    <div id="myDIV">
+        @foreach (var item in question)
+        {
+            foreach (var item2 in questionofexam)
+            {
+                if (item.QuestionID == item2.QuestionID)
+                {
+                    <p><strong>Câu @dem: @item.Ques</strong></p>
+
+                    <form>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">A: @item.Option1</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">B: @item.Option2</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">C: @item.Option3</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">D: @item.Option4</label>
+                        </div>
+                    </form>
+                    <p><strong><font face="verdana" color="blue">Bạn chọn: @answer[dem--].Answer1</font></strong></p>
+                    <p><strong><font face="verdana" color="green">Đáp án đúng: @item.CorrectAnswer</font></strong></p>
+                    <p><strong><font face="verdana" color="red">@item.Description</font></strong></p>
+                    dem++;
+                    <br />
+                }
+            }
+        }
+    </div>
+    <br />
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById('myDIV');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+</div>

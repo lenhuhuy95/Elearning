@@ -1,0 +1,29 @@
+﻿@model List<Model.EF.CourseCategory>
+
+<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+    <ul class="nav navbar-nav nav_1">
+        <!-- =null là danh mục cha -->
+        @foreach (var item in Model.Where(x => x.ParentID == null))
+        {
+            <!-- tạo danh mục con với đk -->
+            var child = Model.Where(x => x.ParentID == item.CategoryID);
+            <!-- ktra danh mục con > 0 thì mới có Class -->
+            var parentClass = child.Count() > 0 ? "class=dropdown - toggle data-toggle=dropdown" : "";
+            <li class="dropdown">
+                <a href="/khoa-hoc/@item.MetaTitle-@item.CategoryID" class="dropdown-toggle" data-toggle="dropdown">@item.CategoryName<span class="caret"></span></a>
+                <!-- ktra child có độ dài >0 thì sổ ra con-->
+                @if (child.Count() > 0)
+                {
+                    <ul class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                        @foreach (var childItem in child)
+                        {
+                            <li>
+                                <a href="/khoa-hoc/@childItem.MetaTitle-@childItem.CategoryID">@childItem.CategoryName</a>
+                            </li>
+                        }
+                    </ul>
+                }
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,119 @@
+﻿@model Elearning.Models.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    @using (Html.BeginForm("Login", "User", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h4>Đăng nhập</h4>
+                <hr />
+
+                <div class="form-group">
+                    <label class="control-label col-md-2"></label>
+                    <div class="col-md-10">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    </div>
+                </div>               
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-5">
+                        @Html.TextBoxFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" }})
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-5">
+                        @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Đăng nhập" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        }
+
+    @*<div class="products-breadcrumb">
+        <div class="container">
+            <ul>
+                <li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>|</span></li>
+                <li>Sign In</li>
+            </ul>
+        </div>
+    </div>*@
+
+    @*@using (Html.BeginForm("Login", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+        <div class="w3_login">
+            <h3>Sign In</h3>
+
+            <div class="w3_login_module">
+                <div class="module form-module">
+                    <div class="toggle">
+                        <i class="fa fa-times fa-pencil"></i>
+                        <div class="tooltip">Click</div>
+                    </div>
+                    <div class="form">
+                        <h2>Đăng nhập vào tài khoản của bạn!</h2>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-2"></label>
+                            <div class="col-md-10">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <form action="User" method="post">
+                            <input type="text" name="Username" placeholder="Username" required=" ">
+                            <input type="password" name="Password" placeholder="Password" required=" ">
+                            <input type="submit" value="Đăng nhập">
+                            <p style="padding: 2px">
+                                <div align="center">
+                                    <span>Hoặc</span>
+                                </div>
+                            </p>
+                            <a class="btn btn-block btn-social btn-facebook" style="text-align: center" href="/User/LoginFacebook">
+                                <span class="fa fa-facebook"></span>
+                                Đăng nhập bằng Facebook
+                            </a>
+                            <br />
+                            <a class="btn btn-block btn-social btn-flickr" style="text-align: center" href="/dang-ky">
+                                <span class="fa fa-flickr"></span>
+                                Đăng ký tài khoản
+                            </a>
+                        </form>
+                    </div>
+                    <div class="cta"><a href="#">Forgot your password?</a></div>
+                </div>
+            </div>
+
+            <script>
+                $('.toggle').click(function () {
+                    // Switches the Icon
+                    $(this).children('i').toggleClass('fa-pencil');
+                    // Switches the forms
+                    $('.form').animate({
+                        height: "toggle",
+                        'padding-top': 'toggle',
+                        'padding-bottom': 'toggle',
+                        opacity: "toggle"
+                    }, "slow");
+                });
+            </script>
+
+        </div>
+    }*@
+</div>

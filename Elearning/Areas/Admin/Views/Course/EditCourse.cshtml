@@ -1,0 +1,469 @@
+﻿@model Model.EF.Course
+
+@{
+    ViewBag.Title = "EditCourse";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var listtag = (List<Model.EF.Tag>)ViewBag.ListTag;
+    var categoryselect = (List<Model.ViewModel.CourseCategoryView>)ViewBag.categoryselect;
+    var category = (List<Model.ViewModel.CategoryView>)ViewBag.category;
+    var ListTagSelect = (List<Model.ViewModel.CourseTag_Tag>)ViewBag.ListTagSelect;
+    var Instructed = (List<Model.EF.Admin>)ViewBag.Instructed;
+    var RelatedCourses = (List<Model.EF.Course>)ViewBag.RelatedCourses;
+    var RelatedCoursesSelect = (List<Model.EF.RelatedCours>)ViewBag.RelatedCoursesSelect;
+    var money = (List<Model.EF.Money>)ViewBag.ListMoney;
+}
+
+<script src="~/Assets/client/js/jquery-3.1.1.min.js"></script>
+<script src="~/Assets/client/js/select2.min.js"></script>
+<link href="~/Assets/client/css/select2.min.css" rel="stylesheet" />
+
+<link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script src="~/Assets/client/js/Vimeo.js"></script>
+<script src="~/Assets/client/js/Youtube.min.js"></script>
+<script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
+
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            e.preventDefault();
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+                $('#imageurl').val(url);
+            };
+            finder.popup();
+        })
+
+        var editor = CKEDITOR.replace('txtCourse', {
+            customConfig: '/Assets/admin/js/plugin/ckeditor/config.js',
+        });
+    </script>
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Course
+        <small>Control panel</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Course</a></li>
+        <li class="active">Course Edit</li>
+    </ol>
+</section>
+
+
+<script>
+    $("#html5-video").pPlayer({
+        youtubeVideoId: "YE7VzlLtp-4"
+    });
+</script>
+<!-- new { enctype = "multipart/form-data" } dùng để xử lý lưu video -->
+@using (Html.BeginForm("EditCourse", "Course", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.CourseID)
+
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-8">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div role="form">
+                        <div class="box-body">
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CourseName)
+
+                                @Html.EditorFor(model => model.CourseName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.CourseName, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Description)
+                                @Html.TextAreaFor(model => model.Description, new { @class = "form-control", rows = "3" })
+                                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                            </div>
+
+
+
+                            <div class="box box-primary">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Video giới thiệu</h3>
+                                </div>
+                                <div class="box-body">
+                                    <form role="form"></form>
+                                    <div class="form-group">
+                                        <h5>File video mp4/webm</h5>
+                                        <row>
+                                            <input type="file" value="filevideo" name="file" id="file" onclick="SelectFile()" />
+                                            <button type="button" id="btnremovefile" onclick="RemoveFile()">Hủy file</button>
+                                        </row>
+                                        @*video cũ*@
+                                        @if (Model.Video.Contains("mp4") || Model.Video.Contains("webm") || Model.Video.Contains("MP4"))
+                                        {
+                                            <video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="300" height="200"
+                                                   data-setup="{}">
+                                                <source src="@Url.Content("~/Video/"+@Model.Video)" type='video/mp4'>
+                                                <source src="@Url.Content("~/Video/"+@Model.Video)" type='video/webm'>
+                                                <p class="vjs-no-js">
+                                                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                                </p>
+                                            </video>
+                                        }
+                                        <h5>Hoặc đường dẫn video</h5>
+                                        <input type="text" size="100%" value="@(Model.Video.Contains(".com") ? @Model.Video:"")" placeholder="Đường dẫn video" onclick="SelectLink()" id="link" name="linkvideo" />
+                                        <button type="button" id="btnremovelink" onclick="RemoveLink()">Hủy link</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Detail)
+
+                                @Html.TextAreaFor(model => model.Detail, new { htmlAttributes = new { @class = "form-control" }, id = "txtCourse" })
+                                @Html.ValidationMessageFor(model => model.Detail, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box box-info">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Thêm khoá học</h3>
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+                <div class="form-horizontal">
+                    <div class="box-body">
+
+                        @*<div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 control-label">Trạng thái</label>
+                                <div class="col-xs-4">
+                                    <input type="text" class="form-control" placeholder="Draft" disabled="">
+                                </div>
+                            </div>*@
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Cost, new { @class = "col-sm-4 control-label" })
+                            @Html.TextBoxFor(model => model.Cost, new { htmlAttributes = new { @class = "form-control" }, placeholder = "Giá cũ" })
+                            @Html.ValidationMessageFor(model => model.Cost, "", new { @class = "text-danger" })
+
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.PromotionCost, new { @class = "col-sm-4 control-label" })
+                            @Html.TextBoxFor(model => model.PromotionCost, new { htmlAttributes = new { @class = "form-control" }, placeholder = "Giá hiện tại" })
+                            @Html.ValidationMessageFor(model => model.PromotionCost, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            <h5 class="col-sm-4 control-label"><strong>Đơn vị tiền</strong></h5>
+                            <select id="money" multiple class="js-example-basic-single" style="width:30%">
+                                @foreach (var item in money)
+                                {
+                                    if (item.MoneyID == Model.MoneyID)
+                                    {
+                                        <option value=@item.MoneyID selected>@item.Unit</option>
+                                    }
+                                    else
+                                    {
+                                        <option value=@item.MoneyID>@item.Unit</option>
+                                    }
+
+                                }
+                            </select>
+                        </div>
+
+                        <input type="text" hidden id="moneyid" name="moneyselected">
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Percent, new { @class = "col-sm-4 control-label" })
+
+                            @Html.TextBoxFor(model => model.Percent, new { htmlAttributes = new { @class = "form-control" }, placeholder = "%" })
+                            @Html.ValidationMessageFor(model => model.Percent, "", new { @class = "text-danger" })
+
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.NumberSection, new { @class = "col-sm-4 control-label" })
+
+                            @Html.TextBoxFor(model => model.NumberSection, new { htmlAttributes = new { @class = "form-control" }, placeholder = "Số chương" })
+                            @Html.ValidationMessageFor(model => model.NumberSection, "", new { @class = "text-danger" })
+
+                        </div>
+
+                    </div>
+
+                    <!-- /.box-body -->
+                    <div class="box-footer">
+                        @*<button type="submit" class="btn btn-default">Xem thử</button>*@
+                        <input type="submit" onclick="GetId()" value="Cập nhật" class="btn btn-info pull-right" />
+                    </div>
+                    <!-- /.box-footer -->
+                </div>
+            </div>
+
+            <div class="box box-warning">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Giảng viên</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <form role="form">
+                        <!-- text input -->
+
+                        <div class="form-group">
+
+                            <select id="Instructed" class="js-example-placeholder-single js-states form-control" style="width:400px">
+                                @foreach (var item in Instructed)
+                                {
+                                    if (item.AdminID == Model.Instructed)
+                                    {
+                                        <option value="@item.AdminID" selected>@item.NameAdmin</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@item.AdminID">@item.NameAdmin</option>
+                                    }
+                                }
+
+                            </select>
+
+                        </div>
+
+                    </form>
+
+                </div>
+                <input type="text" hidden id="Instructedid" name="Instructedselect">
+                <!-- /.box-body -->
+            </div>
+
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Ảnh minh họa</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <form role="form">
+                        <!-- text input -->
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Image)
+
+                            @Html.TextBoxFor(model => model.Image, new { htmlAttributes = new { @class = "form-control" }, id = "txtImage" })
+                            <button id="btnSelectImage">Chọn ảnh</button>
+                            @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+                            <br />
+                            <input width="100%" src="@Model.Image" type="image" />
+                        </div>
+
+                    </form>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <input type="text" hidden id="imageurl" name="imageurl">
+
+            <div class="box box-warning">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Chuyên Mục</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <form role="form">
+                        <!-- text input -->
+
+                        <div class="form-group">
+
+                            <select id="category" class="js-example-placeholder-single js-states form-control" style="width:400px">
+                                @foreach (var item in category)
+                                {
+                                    int a = 1;
+                                    foreach (var item2 in categoryselect)
+                                    {
+                                        if (item.CategoryID == @item2.CategoryID)
+                                        {
+                                            a = 0;
+                                            break;
+                                        }
+                                    }
+                                    <option @(a == 0 ? "selected" : "") value=@item.CategoryID @(item.ParentID == null ? "disabled" : "") class="@(item.ParentID == null ? "greenColor" : "")">@(item.ParentID != null ? @item.CategoryNameParent + " => " : "") @item.CategoryName</option>
+                                }
+
+                            </select>
+
+                        </div>
+
+                    </form>
+                </div>
+                <!-- /.box-body -->
+            </div>
+
+            <input type="text" hidden id="categoryid" name="listcategoryselect">
+
+            <div class="box box-warning">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Thẻ</h3>
+                </div>
+                <div class="box-body">
+                    <form role="form"></form>
+
+                    <div class="form-group">
+
+                        <select id="tag" multiple class="js-example-basic-single" style="width:400px">
+                            @foreach (var item in listtag)
+                            {
+                                int a = 1;
+
+                                foreach (var item2 in ListTagSelect)
+                                {
+                                    if (item.TagID == item2.TagID)
+                                    {
+                                        a = 0;
+                                        break;
+                                    }
+                                }
+                                <option @(a == 0 ? "selected" : "") value=@item.TagID> @item.TagName</option>
+                            }
+
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Lưu tagID trong select2-->
+            <input type="text" hidden id="tagid" name="listTagSelect">
+
+            <!--Script xử lý đoạn select2 cho Tag-->
+            <script>
+                $(document).ready(function () {
+                    $("#tag").select2({
+                        tags: true,
+                        placeholder: 'Chọn tag'
+                    });
+                });
+
+                $(document).ready(function () {
+                    $("#category").select2({
+
+                        placeholder: 'Chọn chuyên mục',
+
+                    });
+                });
+
+                $(document).ready(function () {
+                    $("#Instructed").select2({
+
+                        placeholder: 'Chọn giảng viên',
+
+                    });
+                });
+                //khóa học liên quan
+
+                $(document).ready(function () {
+                    $("#RelatedCourses").select2({
+                        tags: true,
+                        placeholder: 'Chọn khóa học liên quan',
+                        allowClear: true
+                    });
+                });
+
+                $(document).ready(function () {
+                    $("#money").select2({
+                        tags: true,
+                        placeholder: 'Chọn đơn vị tiền',
+                        maximumSelectionLength: 1,
+                        allowClear: true
+                    });
+                });
+
+                function GetId() {
+                    $("#tagid").val($("#tag").val())
+                    $("#categoryid").val($("#category").val())
+                    $("#Instructedid").val($("#Instructed").val())
+                    $("#RelatedCoursesid").val($("#RelatedCourses").val())
+                    $("#moneyid").val($("#money").val())
+                }
+                function RemoveFile() {
+                    $("#file").val(null)
+                    document.getElementById("link").disabled = false;
+                    document.getElementById("file").disabled = false;
+                    document.getElementById("btnremovelink").disabled = false;
+                    document.getElementById("btnremovefile").disabled = false;
+                }
+
+                function RemoveLink() {
+                    $("#link").val(null)
+                    document.getElementById("link").disabled = false;
+                    document.getElementById("file").disabled = false;
+                    document.getElementById("btnremovefile").disabled = false;
+                    document.getElementById("btnremovelink").disabled = false;
+                }
+
+                function SelectFile() {
+                    document.getElementById("link").disabled = true;
+                    document.getElementById("btnremovelink").disabled = true;
+                    document.getElementById("btnremovefile").disabled = false;
+                    document.getElementById("file").disabled = false;
+                    $("#link").val(null)
+                }
+
+                function SelectLink() {
+                    document.getElementById("file").disabled = true;
+                    document.getElementById("btnremovefile").disabled = true;
+                    document.getElementById("link").disabled = false;
+                    document.getElementById("btnremovelink").disabled = false;
+                    $("#file").val(null)
+                }
+            </script>
+
+            <div class="box box-warning">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Khóa học liên quan</h3>
+                </div>
+                <div class="box-body">
+                    <form role="form"></form>
+                    <div class="form-group">
+                        <select id="RelatedCourses" multiple class="js-example-basic-single" style="width:400px">
+                            @foreach (var item in RelatedCourses)
+                            {
+                                int a = 0;
+                                foreach (var item2 in RelatedCoursesSelect)
+                                {
+                                    if (item.CourseID == item2.RelatedID)
+                                    {
+                                        a = 1;
+                                        break;
+                                    }
+
+                                }
+                                <option value=@item.CourseID @(a == 1 ? "selected" : "")> @item.CourseName</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <input type="text" hidden id="RelatedCoursesid" name="RelatedCoursesSelected">
+        </div>
+
+    </div>
+}
+
+
+
+
+
+

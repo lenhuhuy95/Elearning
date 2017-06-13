@@ -1,0 +1,53 @@
+﻿@model Model.EF.Question
+
+@{
+    ViewBag.Title = "TypeQuestion";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var courseid = ViewBag.courseid;
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Course
+        <small>Control panel</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Course</a></li>
+        <li class="active">Type Question</li>
+    </ol>
+</section>
+
+<br />
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+
+            <a href="/Admin/Course/CreateQuestion/@courseid" class="btn btn-primary">Single Choice</a>
+
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+
+            <a href="/Admin/Course/MultipleQuestion/@courseid" class="btn btn-primary">Multiple Choice</a>
+
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+
+            <a href="/Admin/Course/TrueFalseQuestion/@courseid" class="btn btn-primary">True, False</a>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+

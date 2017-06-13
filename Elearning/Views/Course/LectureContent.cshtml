@@ -1,0 +1,97 @@
+﻿@model Model.EF.Lecture
+@{
+    ViewBag.Title = "LectureContent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var involveLecture = (List<Model.EF.Course>)ViewBag.InvolveLecture;
+    var exam = (List<Model.EF.Exam>)ViewBag.Exam;
+}
+<div id="fb-root"></div>
+<script>
+(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=921712891292675";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="container">
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#about-lecture">About</a></li>
+        <li><a href="#assignment">Assignment</a></li>
+    </ul>
+
+    <div class="agileinfo">
+        <div class="col-md-8">
+            <div id="#about-lecture">
+                <h1>@Model.LectureName</h1>
+                <br />
+                <i>@Model.Description</i>
+                @Html.Raw(@Model.Detail)  <!-- //Đọc được dữ liệu từ Lecture Detail lên trang Client -->
+            </div>
+            <div>
+                <div class="fb-comments" data-href="http://localhost:1704/Course/LectureContent/'+@Model.LectureID+'" data-width="1150" data-numposts="5"></div>
+            </div>
+        </div>
+
+        <div class="col-md-4 agileinfo_single_right_snipcart">
+
+            <div id="assignment">
+                <h1>Assignment</h1>
+                @foreach(var item in exam)
+                {
+                    <a href="/Course/Exam/@item.ExamID">@item.Name</a>
+                    <br />
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_popular">
+    <div class="container">
+        <h3>Khoá học liên quan</h3>
+        <div class="w3ls_w3l_banner_nav_right_grid1">
+            @foreach (var item in involveLecture)
+            {
+                var url = "/chi-tiet/" + item.MetaTitle + "-" + item.CourseID;
+                <div class="col-md-3 w3ls_w3l_banner_left">
+                    <div class="hover14 column">
+                        <div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+                            <div class="agile_top_brand_left_grid_pos">
+                                @*<img src="images/offer.png" alt=" " class="img-responsive" />*@
+                            </div>
+                            <div class="agile_top_brand_left_grid1">
+                                <figure>
+                                    <div class="snipcart-item block">
+                                        <div class="snipcart-thumb">
+                                            <a href="@url"><img src="@item.Image" alt=" " class="img-responsive" /></a>
+                                            <p>@item.CourseName</p>
+                                            <h4>@(item.Cost.HasValue ? item.Cost.Value.ToString("N0") : "Liên Hệ") <span>@(item.PromotionCost.HasValue ? item.PromotionCost.Value.ToString("N0") : "Liên Hệ")</span></h4>
+                                        </div>
+                                        <div class="snipcart-details">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="submit" name="submit" value="Add to cart" class="button" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+
+
+

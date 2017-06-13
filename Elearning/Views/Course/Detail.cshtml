@@ -1,0 +1,338 @@
+﻿@model Model.EF.Course
+@{
+    ViewBag.Title = Model.CourseName;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //var category = (Model.EF.CourseCategory)ViewBag.Category;
+    var involveCourses = (List<Model.EF.RelatedCours>
+    )ViewBag.InvolveCourse;
+    var listCourse = (List<Model.EF.Course>
+        )ViewBag.ListCourse;
+    var checkAccountUser = ViewBag.CheckAccount;
+    var videotype = ViewBag.videotype;
+    var SessionNow = ViewBag.SessionNow;
+    var moneyUnit = (List<Model.EF.Money>
+        )ViewBag.MoneyUnit;
+    var exam = (List<Model.EF.Exam>
+        )ViewBag.Exam;
+    DateTime aDateTime = DateTime.Now;
+    var CheckUserExam = (List<Model.EF.Score>
+        )ViewBag.CheckUserExam;
+}
+
+<link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script src="~/Assets/client/js/Vimeo.js"></script>
+<script src="~/Assets/client/js/Youtube.min.js"></script>
+<script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
+<div id="fb-root"></div>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id))
+            return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=921712891292675";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<html>
+<body>
+    <!-- banner -->
+    <div>
+        <div class="container">
+            <hr />
+            <div class="agileinfo">
+
+                <div class="col-md-8">
+                    @if (videotype == "youtub")
+                    {
+                        <video id="vid1"
+                               class="video-js vjs-default-skin"
+                               width="740" height="420"
+                               data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src":  "@Url.Content(@Model.Video)"}],"youtube": { "ytControls": 2 } }'></video>
+                    }
+                    else
+                    {
+                        if (videotype == "vimeo")
+                        {
+                            <video id="vid1"
+                                   class="video-js vjs-default-skin"
+                                   width="740" height="420"
+                                   controls
+                                   data-setup='{ "techOrder": ["vimeo"], "sources": [{ "type": "video/vimeo", "src": "@Url.Content(@Model.Video)"}], "vimeo": { "ytControls": 2 }  }'></video>
+                        }
+                        else
+                        {
+                            <video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="740" height="420"
+                                   data-setup="{}">
+                                <source src="@Url.Content(" ~/Video/"+@Model.Video)" type='video/mp4'>
+                                <source src="@Url.Content(" ~/Video/"+@Model.Video)" type='video/webm'>
+                                <p class="vjs-no-js">
+                                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                </p>
+                            </video>
+                        }
+                    }
+
+                </div>
+
+                <div class="col-md-4 agileinfo_single_right_snipcart">
+                    <h3>@Model.CourseName</h3>
+                    <br />
+                    <div class="rating1">
+                        <span class="starRating">
+                            <input id="rating5" type="radio" name="rating" value="5">
+                            <label for="rating5">5</label>
+                            <input id="rating4" type="radio" name="rating" value="4">
+                            <label for="rating4">4</label>
+                            <input id="rating3" type="radio" name="rating" value="3" checked>
+                            <label for="rating3">3</label>
+                            <input id="rating2" type="radio" name="rating" value="2">
+                            <label for="rating2">2</label>
+                            <input id="rating1" type="radio" name="rating" value="1">
+                            <label for="rating1">1</label>
+                        </span>
+                    </div>
+                    <div class="w3agile_description">
+                        <h4>Description :</h4>
+                        <p>
+                            <strong>
+                                @Model.Description
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="snipcart-item block">
+
+                        <!--Kiểm tra xem thử User đã đăng ký khóa học chưa, nếu đk rồi thì ẩn nút đi-->
+                        @if (checkAccountUser != true)
+                        {
+                            <div class="snipcart-thumb agileinfo_single_right_snipcart">
+                                @foreach (var item2 in moneyUnit)
+                                {
+                                    if (Model.MoneyID == item2.MoneyID)
+                                    {
+                                        <h4>@(Model.Cost.HasValue ? Model.Cost.Value.ToString("N0") : "Liên Hệ") @item2.Unit<span>@Model.PromotionCost @item2.Unit</span></h4>
+                                    }
+                                }
+                            </div>
+
+                                        <div class="snipcart-details agileinfo_single_right_snipcart">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    @if (SessionNow == "null")//không có tài khoản đang đăng nhập
+                                                    {
+                                                        @*<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Login</button>*@
+                                                        @*<input type="button" data-toggle="modal" data-target="#myModal" class="btn btn-block btn-success" value="Take This Course" />*@
+                                                    <!-- Modal -->
+                                                        <div class="modal fade" id="myModal" role="dialog">
+
+                                                            @using (Html.BeginForm("Login", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                                            {
+                                                                <input type="text" hidden id="url" name="url" />
+                                                                <div class="w3_login">
+
+                                                                    <div class="w3_login_module">
+                                                                        <div class="module form-module">
+                                                                            <div class="close">
+                                                                                <button type="button" class="btn btn-default" style="background:#ffffff" data-dismiss="modal">
+                                                                                    <i class="fa fa-times"></i>
+                                                                                </button>
+
+                                                                            </div>
+
+                                                                            <div class="form">
+                                                                                <h2 style="text-align:center">Đăng nhập vào tài khoản của bạn!</h2>
+
+                                                                                <div style="text-align:center">
+                                                                                    <span id="msg" style="color:red;" />
+                                                                                </div>
+                                                                                <br />
+                                                                                <input type="text" name="Username" id="Username" placeholder="Username" required="required">
+                                                                                <input type="password" name="Password" id="Password" placeholder="Password" required="required">
+
+                                                                                <input type="button" value="Đăng nhập" id="Save" class="btn btn-success btn-block">
+                                                                                <p style="padding-bottom: 5px">
+                                                                                    <div align="center">
+                                                                                        <span>---Hoặc---</span>
+                                                                                    </div>
+                                                                                </p>
+                                                                                <div style="padding-top: 5px">
+                                                                                    <a class="btn btn-block btn-social btn-facebook" style="text-align: center" href="/User/LoginFacebook">
+                                                                                        <span class="fa fa-facebook"></span>
+                                                                                        Đăng nhập bằng Facebook
+                                                                                    </a>
+                                                                                    <br />
+                                                                                    <a class="btn btn-block btn-social btn-flickr" style="text-align: center" href="/dang-ky">
+                                                                                        <span class="fa fa-flickr"></span>
+                                                                                        Đăng ký tài khoản
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="cta"><a href="#">Forgot your password?</a></div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <script type="text/javascript">
+                                                                        $('#Save').click(function () {
+                                                                            var url = "/User/Login";
+                                                                            var Username = $("#Username").val();
+                                                                            var Password = $("#Password").val();
+                                                                            $.post(url, { Username: Username, Password: Password }, function (data) {
+                                                                                //$("#msg").html(data);
+                                                                                if (data == "Đúng") //Kiểm tra trường hợp đăng nhập đúng ở Controller
+                                                                                    top.location.href = "/";//redirection
+                                                                                else
+                                                                                    $("#msg").html(data);
+                                                                            });
+                                                                        })
+                                                                    </script>
+                                                                </div>
+                                                            }
+                                                        </div>
+                                                    }
+                                                    else
+                                                    {
+                                                    }
+                                                </fieldset>
+                                            </form>
+                                            <br />
+                                            <form action="/them-gio-hang?courseId=@Model.CourseID" method="post">
+                                                <fieldset>
+                                                    <input type="submit" name="submit" value="Add to cart" class="button" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                        }
+
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- //banner -->
+
+    <br />
+    <hr />
+
+    <div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_popular">
+        <div class="container">
+            <h3>About This Course</h3>
+            <div class="table-responsive b0-xs">
+                @Html.Raw(@Model.Detail)  <!-- //Đọc được dữ liệu từ Course Detail lên trang Client -->
+                <br />
+                <hr />
+                @{ Html.RenderAction("ListSection", "Course", new { courseID = Model.CourseID });} <!-- Gọi (Show) dữ liệu từ trang View ListSection -->
+            </div>
+            @if (checkAccountUser)
+            {
+                int flag = 0;
+                <div>
+                    <h3>Bài tập khóa học</h3>
+                    @foreach (var item in exam)
+                    {
+                        foreach (var item2 in CheckUserExam)
+                        {
+
+                            if (item2.ExamID == item.ExamID)
+                            {
+                                flag = 1;
+                                break;
+                            }
+                        }
+                        if (flag == 0)
+                        {
+                            //compare1 mà nhỏ hơn 0 thì now sớm hơn ngày bắt đầu => chưa được thi
+                            int compare1 = DateTime.Compare(aDateTime, DateTime.Parse(item.DateStart));
+                            //compare2 mà lớn hơn 0 thì now trễ hơn ngày kết thúc => hết thời hạn thi
+                            int compare2 = DateTime.Compare(aDateTime, DateTime.Parse(item.DateEnd));
+
+                            if (compare1 > 0 && compare2 < 0)
+                            {
+                                if (item.Type.Trim().Equals("1"))
+                                {
+                                    <h4>@item.Name <a href="/Course/Exam/@item.ExamID" class="btn btn-success center col-lg-offset-2">Bắt đầu</a></h4>
+                                    <br />
+                                }
+                                if (item.Type.Trim().Equals("2"))
+                                {
+                                    <h4>@item.Name <a href="/Course/SelectFile/@item.ExamID" class="btn btn-success center col-lg-offset-2">Nộp file</a></h4>
+                                    <br />
+                                }
+
+                            }
+                        }
+                        flag = 0;
+                    }
+                </div>
+            }
+
+            <div>
+                <div class="fb-comments" data-href="http://localhost:1704/chi-tiet/'+@Model.MetaTitle+'-'+@Model.CourseID+'" data-width="1150" data-numposts="5"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- brands -->
+    <div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_popular">
+        <div class="container">
+            <h3>Khoá học liên quan</h3>
+            <div class="w3ls_w3l_banner_nav_right_grid1">
+                @foreach (var item in involveCourses)
+                {
+                    foreach (var item1 in listCourse)
+                    {
+                        if (item.RelatedID == item1.CourseID)
+                        {
+                            var url = "/chi-tiet/" + item1.MetaTitle + "-" + item1.CourseID;
+                            <div class="col-md-3 w3ls_w3l_banner_left">
+                                <div class="hover14 column">
+                                    <div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+                                        <div class="agile_top_brand_left_grid_pos">
+                                            @*<img src="images/offer.png" alt=" " class="img-responsive" />*@
+                                        </div>
+                                        <div class="agile_top_brand_left_grid1">
+                                            <figure>
+                                                <div class="snipcart-item block">
+                                                    <div class="snipcart-thumb">
+                                                        <a href="@url"><img src="@item1.Image" alt=" " class="img-responsive" /></a>
+                                                        <p>@item1.CourseName</p>
+                                                        <br />
+                                                        @foreach (var item2 in moneyUnit)
+                                                        {
+                                                            if (item1.MoneyID == item2.MoneyID)
+                                                            {
+                                                                <h4>@(item1.Cost.HasValue ? item1.Cost.Value.ToString("N0") : "Liên Hệ") @item2.Unit<span>@item1.PromotionCost @item2.Unit</span></h4>
+                                                            }
+                                                        }
+                                                    </div>
+                                                    <div class="snipcart-details">
+                                                        <form action="/them-gio-hang?courseId=@item.CourseID" method="post">
+                                                            <fieldset>
+                                                                <input type="submit" name="submit" value="Add to cart" class="button" />
+                                                            </fieldset>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#html5-video").pPlayer({ youtubeVideoId: "YE7VzlLtp-4" });
+    </script>
+
+
+</body>
+</html>

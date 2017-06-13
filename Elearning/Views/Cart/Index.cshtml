@@ -1,0 +1,168 @@
+﻿@model List<Elearning.Models.CartItem>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var moneyUnit = (List<Model.EF.Money>)ViewBag.MoneyUnit;
+}
+
+@section jsFooter{
+    <script src="~/Assets/client/js/controller/cartController.js"></script>
+}
+
+
+<div class="products-breadcrumb">
+    <div class="container">
+        <ul>
+            <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">Shopping Cart</a><span>|</span></li>
+            <li><h3>Shopping Cart</h3></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <hr />
+    <h3><strong>Giỏ hàng của tôi</strong></h3>
+    @{
+        var session = (UserLogin)Session[Elearning.Common.CommonConstants.USER_SESSION];
+    }
+    @if (Model.Count > 0)
+    {
+        <div class="col-md-8">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td style="width: 5px;"><strong>@Model.Count Khóa học</strong></td>
+                        <td></td>
+                        <td><strong>Giá</strong></td>
+                        <td></td>
+                    </tr>
+                </thead>
+
+                <tbody class="top-cart">
+                    @foreach (var item in Model)
+                {
+                    var url = "/chi-tiet/" + item.Course.MetaTitle + "-" + item.Course.CourseID;
+                        <tr>
+                            <td><a href="@url"><img src="@item.Course.Image" width="100" /></a></td>
+                            <td><a href="@url"><strong>@item.Course.CourseName</strong></a></td>
+                            @foreach (var item1 in moneyUnit)
+                            {
+                                if (item.Course.MoneyID == item1.MoneyID)
+                                {
+                                    <td><strong>@item.Course.Cost.GetValueOrDefault(0).ToString("N0") @item1.Unit</strong></td>
+                                }
+                            }
+                            <td style="width:5%"><a href="#" data-id="@item.Course.CourseID" class="btn-delete btn-default" style="color:red"><i class="fa fa-times"></i></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-4">
+            <h4><strong>Thông tin đơn hàng</strong></h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td><hr /></td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Tạm tính: <strong>@Model.Sum(x => x.Course.Cost) VND</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+            <p>Thành tiền (Tổng tiền thanh toán): <strong>@Model.Sum(x => x.Course.Cost) VND</strong></p>
+            <br />
+            @if (session == null)
+            {
+            <a class="btn btn-warning btn-block navbar-nav" data-toggle="modal" data-target="#myModal">TIẾN HÀNH THANH TOÁN</a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+
+                @using (Html.BeginForm("Login", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <input type="text" hidden id="url" name="url" />
+                    <div class="w3_login">
+
+                        <div class="w3_login_module">
+                            <div class="module form-module">
+                                <div class="close">
+                                    <button type="button" class="btn btn-default" style="background:#ffffff" data-dismiss="modal">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="form">
+                                    <h2 style="text-align:center">Đăng nhập vào tài khoản của bạn!</h2>
+
+                                    <div style="text-align:center">
+                                        <span id="msg" style="color:red;" />
+                                    </div>
+                                    <br />
+                                    <input type="text" name="Username" id="Username" placeholder="Username" required="required">
+                                    <input type="password" name="Password" id="Password" placeholder="Password" required="required">
+
+                                    <input type="button" value="Đăng nhập" id="Save" class="btn btn-success btn-block">
+                                    <p style="padding-bottom: 5px">
+                                        <div align="center">
+                                            <span>---Hoặc---</span>
+                                        </div>
+                                    </p>
+                                    <div style="padding-top: 5px">
+                                        <a class="btn btn-block btn-social btn-facebook" style="text-align: center" href="/User/LoginFacebook">
+                                            <span class="fa fa-facebook"></span>
+                                            Đăng nhập bằng Facebook
+                                        </a>
+                                        <br />
+                                        <a class="btn btn-block btn-social btn-flickr" style="text-align: center" href="/dang-ky">
+                                            <span class="fa fa-flickr"></span>
+                                            Đăng ký tài khoản
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cta"><a href="#">Forgot your password?</a></div>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                            $('#Save').click(function () {
+                                var url = "/User/Login";
+                                var Username = $("#Username").val();
+                                var Password = $("#Password").val();
+                                $.post(url, { Username: Username, Password: Password }, function (data) {
+                                    //$("#msg").html(data);
+                                    if (data == "Đúng") //Kiểm tra trường hợp đăng nhập đúng ở Controller
+                                        top.location.href = "/";//redirection
+                                    else
+                                        $("#msg").html(data);
+                                });
+                            })
+                        </script>
+                    </div>
+                }
+            </div>
+            }
+            else
+            {
+            <button id="btnPayment" class="btn">Thanh toán</button>
+            }
+        </div>
+
+        <button id="btnDeleteAll" class="btn" style="color:red">Xóa giỏ hàng</button>
+
+    }
+    else
+    {
+        <div class="col-lg-5" style="padding-bottom:1cm">
+            <br />
+            <strong><span class="alert alert-danger">Chưa khóa học nào trong giỏ hàng</span></strong>
+        </div>
+    }
+
+</div>

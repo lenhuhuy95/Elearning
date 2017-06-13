@@ -1,0 +1,208 @@
+﻿@model Model.EF.Lecture
+
+@{
+    ViewBag.Title = "EditLecture";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section jsFooter{
+    <script>
+        $('#btnSelectImage').on('click', function (e) {
+            e.preventDefault();
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (url) {
+                $('#txtImage').val(url);
+            };
+            finder.popup();
+        })
+
+        var editor = CKEDITOR.replace('txtLecture', {
+            customConfig: '/Assets/admin/js/plugin/ckeditor/config.js',
+        });
+    </script>
+}
+
+<link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script src="~/Assets/client/js/Vimeo.js"></script>
+<script src="~/Assets/client/js/Youtube.min.js"></script>
+<script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Course
+        <small>Control panel</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Course</a></li>
+        <li class="active">Lecture Edit</li>
+    </ol>
+</section>
+
+
+<!-- new { enctype = "multipart/form-data" } dùng để xử lý lưu video -->
+@using (Html.BeginForm("EditLecture", "Course", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.SectionID) //Trả về SectionID khi cập nhật bài học thành công.
+                                            @Html.HiddenFor(model => model.LectureID)
+
+                                            <div class="row">
+                                                <!-- left column -->
+                                                <div class="col-md-8">
+                                                    <div class="box box-primary">
+                                                        <div class="box-header with-border">
+                                                            <div role="form">
+                                                                <div class="box-body">
+
+                                                                    <div class="form-group">
+                                                                        @Html.LabelFor(model => model.LectureName)
+
+                                                                        @Html.EditorFor(model => model.LectureName, new { htmlAttributes = new { @class = "form-control" } })
+                                                                        @Html.ValidationMessageFor(model => model.LectureName, "", new { @class = "text-danger" })
+
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        @Html.LabelFor(model => model.Description)
+
+                                                                        @Html.TextAreaFor(model => model.Description, new { @class = "form-control", rows = "3" })
+                                                                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        @Html.LabelFor(model => model.Image)
+
+                                                                        @Html.TextBoxFor(model => model.Image, new { htmlAttributes = new { @class = "form-control" }, id = "txtImage" })
+                                                                        <button id="btnSelectImage">Chọn ảnh</button>
+                                                                        @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+
+                                                                    </div>
+
+                                                                    <div class="box box-primary">
+                                                                        <div class="box-header with-border">
+                                                                            <h3 class="box-title">Video giới thiệu</h3>
+                                                                        </div>
+                                                                        <div class="box-body">
+                                                                            <form role="form"></form>
+                                                                            <div class="form-group">
+                                                                                <h5>File video mp4/webm</h5>
+                                                                                <row>
+                                                                                    <input type="file" value="filevideo" name="file" id="file" onclick="SelectFile()" />
+                                                                                    <button type="button" id="btnremovefile" onclick="RemoveFile()">Hủy file</button>
+                                                                                </row>
+                                                                                @*video cũ*@
+                                                                                @if (Model.Video != null)
+                                                                                {
+                                                                                    if (@Model.Video.Contains("mp4") || @Model.Video.Contains("webm") || @Model.Video.Contains("MP4"))
+                                                                                    {
+                                                                                        <video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="300" height="200"
+                                                                                               data-setup="{}">
+                                                                                            <source src="@Url.Content("~/Video/"+@Model.Video)" type='video/mp4'>
+                                                                                            <source src="@Url.Content("~/Video/"+@Model.Video)" type='video/webm'>
+                                                                                            <p class="vjs-no-js">
+                                                                                                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                                                                                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                                                                            </p>
+                                                                                        </video>
+                                                                                    }
+                                                                                    <h5>Hoặc đường dẫn video</h5>
+                                                                                    <input type="text" size="100%" value="@(Model.Video.Contains(".com") ? @Model.Video:"")" placeholder="Đường dẫn video" onclick="SelectLink()" id="link" name="linkvideo" />
+                                                                                    <button type="button" id="btnremovelink" onclick="RemoveLink()">Hủy link</button>
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    <h5>Hoặc đường dẫn video</h5>
+                                                                                    <input type="text" size="100%" placeholder="Đường dẫn video" onclick="SelectLink()" id="link" name="linkvideo" />
+                                                                                    <button type="button" id="btnremovelink" onclick="RemoveLink()">Hủy link</button>
+                                                                                }
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        @Html.LabelFor(model => model.Detail)
+
+                                                                        @Html.TextAreaFor(model => model.Detail, new { htmlAttributes = new { @class = "form-control" }, id = "txtLecture" })
+                                                                        @Html.ValidationMessageFor(model => model.Detail, "", new { @class = "text-danger" })
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="box box-info">
+                                                        <div class="box-header with-border">
+                                                            <h3 class="box-title">Chỉnh sửa bài học</h3>
+                                                        </div>
+                                                        <!-- /.box-header -->
+                                                        <!-- form start -->
+                                                        <div class="form-horizontal">
+                                                            <div class="box-body">
+
+                                                                <div class="form-group">
+                                                                    @Html.LabelFor(model => model.Fileattached, htmlAttributes: new { @class = "control-label col-md-3" })
+                                                                    <input type="file" name="file1" id="file1" />
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <!-- /.box-body -->
+                                                            <div class="box-footer">
+                                                                <button type="submit" class="btn btn-default">Xem thử</button>
+                                                                @*<a href="https://www.google.com.vn/" type="submit" value="Create" class="btn btn-info pull-right">Xuất bản</a>*@
+                                                                <input type="submit" value="Cập nhật" class="btn btn-info pull-right" />
+                                                            </div>
+                                                            <!-- /.box-footer -->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <script>
+                                                function RemoveFile() {
+                                                    $("#file").val(null)
+                                                    document.getElementById("link").disabled = false;
+                                                    document.getElementById("file").disabled = false;
+                                                    document.getElementById("btnremovelink").disabled = false;
+                                                    document.getElementById("btnremovefile").disabled = false;
+                                                }
+
+                                                function RemoveLink() {
+                                                    $("#link").val(null)
+                                                    document.getElementById("link").disabled = false;
+                                                    document.getElementById("file").disabled = false;
+                                                    document.getElementById("btnremovefile").disabled = false;
+                                                    document.getElementById("btnremovelink").disabled = false;
+                                                }
+
+                                                function SelectFile() {
+                                                    document.getElementById("link").disabled = true;
+                                                    document.getElementById("btnremovelink").disabled = true;
+                                                    document.getElementById("btnremovefile").disabled = false;
+                                                    document.getElementById("file").disabled = false;
+                                                    $("#link").val(null)
+                                                }
+
+                                                function SelectLink() {
+                                                    document.getElementById("file").disabled = true;
+                                                    document.getElementById("btnremovefile").disabled = true;
+                                                    document.getElementById("link").disabled = false;
+                                                    document.getElementById("btnremovelink").disabled = false;
+                                                    $("#file").val(null)
+                                                }
+                                            </script>
+}

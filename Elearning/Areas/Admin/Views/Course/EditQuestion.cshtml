@@ -1,0 +1,170 @@
+﻿@model Model.EF.Question
+
+@{
+    ViewBag.Title = "EditQuestion";
+    var questionid = ViewBag.questionid;
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Assets/client/js/jquery-3.1.1.min.js"></script>
+<script src="~/Assets/client/js/select2.min.js"></script>
+<link href="~/Assets/client/css/select2.min.css" rel="stylesheet" />
+
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Question
+        <small>Control panel</small>
+    </h1>
+    <br />
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Course</a></li>
+        <li class="active">Create Question</li>
+    </ol>
+</section>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(x => x.QuestionID, new { @Value = questionid })
+
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-8">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h1 class="box-title">Cập nhật câu hỏi</h1>
+                    <br />
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Ques)
+
+                        @Html.TextBoxFor(model => model.Ques, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Ques, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Option1)
+
+                        @Html.TextBoxFor(model => model.Option1, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Option1, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Option2)
+
+                        @Html.TextBoxFor(model => model.Option2, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Option2, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Option3)
+
+                        @Html.TextBoxFor(model => model.Option3, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Option3, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Option4)
+
+                        @Html.TextBoxFor(model => model.Option4, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Option4, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Option5)
+
+                        @Html.TextBoxFor(model => model.Option5, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Option5, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Option6)
+
+                        @Html.TextBoxFor(model => model.Option6, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Option6, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Option7)
+
+                        @Html.TextBoxFor(model => model.Option7, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Option7, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Option8)
+
+                        @Html.TextBoxFor(model => model.Option8, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Option8, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Option9)
+
+                        @Html.TextBoxFor(model => model.Option9, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Option9, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Option10)
+
+                        @Html.TextBoxFor(model => model.Option10, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Option10, "", new { @class = "text-danger" })
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+
+                    <div class="form-group">
+                        @*@Html.LabelFor(model => model.CorrectAnswer)*@
+                        <label>Đáp án đúng:</label>
+                        <select id="ques" name="answerSelect" style="width:100%">
+                            <option @(Model.CorrectAnswer.Equals("A") ? "selected" : "") value="A">A</option>
+                            <option @(Model.CorrectAnswer.Equals("B") ? "selected" : "") value="B">B</option>
+                            <option @(Model.CorrectAnswer.Equals("C") ? "selected" : "") value="C">C</option>
+                            <option @(Model.CorrectAnswer.Equals("D") ? "selected" : "") value="D">D</option>
+                        </select>
+                        @*@Html.ValidationMessageFor(model => model.CorrectAnswer, "", new { @class = "text-danger" })*@
+                    </div>
+                    <input type="text" hidden id="corectAnswerText" name="corectAnswer">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Description)
+
+                        @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        <div style="text-align:center">
+                            <input type="submit" value="Cập nhật" onclick="GetId()" class="btn btn-primary" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $("#ques").select2({
+                    tags: true,
+                    allowClear: true,
+
+                });
+            });
+            function GetId() {
+                $("#corectAnswerText").val($("#ques").val())
+            }
+        </script>
+    </div>
+}

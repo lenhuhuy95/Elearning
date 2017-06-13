@@ -1,0 +1,40 @@
+﻿show data view detail SCR05 - Đã hoàn thành
+Layout view detail SCR05 - Đã hoàn thành
+Fix count data SCR04
+
+
+
+ScrollViewer
+
+192.168.1.45
+crawl
+m3j5FfQL
+
+
+relace chưa update child
+
+trong 2 phương pháp: observation, Interview thì cái nào tốt hơn?
+Tại sao có đồng thời 2 PP?
+tại sao muoons thiết kế 1 sp tốt thì phải cần làm contextual?
+
+Phân tích giao diện Youtube gây khó khăn gì cho việc học tiếng anh? cải thiện nó ntn?
+
+
+observation: sẽ thu thập được nhiều thông tin, bao quát hơn
+Interview: sẽ thu thập được thông tin chi tiết hơn, muốn thu đc nhiều thông tin hơn thì phải phỏng vấn nhiều cá nhân.
+2 cách đều có thế mạnh và điểm yếu riêng, điểm mạnh của cái này là điểm yếu của cái kia.
+=> cần phải kết hợp cả 2 phương pháp.
+
+hỏi occoring là cái gì ta?
+tạp trung vào đoạn văn
+zoom vào đoạn văn
+kéo qua kéo lại để xem đc hết đoạn văn.
+hỏi từ .. là gì?
+đoán nghĩa...
+hỏi nghĩa...
+đọc lướt lại
+ghi lại từ mới
+mở từ điển => tra từ
+đọc lại đoạn văn
+
+tự nhận xét luôn

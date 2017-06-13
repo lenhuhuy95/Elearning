@@ -1,0 +1,201 @@
+﻿@model Model.EF.Exam
+
+@{
+    var listques = (List<Model.EF.Question>)ViewBag.ListQues;
+    int type = ViewBag.type;
+    var ListQuesSelect = (List<Model.EF.ExamQuestion>)ViewBag.ListQuesSelect;
+    Layout = "~/Areas/Admin/Views/Shared/_Layout_Private.cshtml";
+}
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script src="/Assets/admin/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+<link href="/Assets/admin/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" />
+
+<script src="~/Assets/client/js/select2.min.js"></script>
+<link href="~/Assets/client/css/select2.min.css" rel="stylesheet" />
+
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Exam
+        <small>Control panel</small>
+    </h1>
+    <br />
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Course</a></li>
+        <li class="active">Edit Exam</li>
+    </ol>
+</section>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ExamID)
+
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-6">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h1 class="box-title">Chỉnh sửa bài thi</h1>
+                        <br />
+
+                        @using (Html.BeginForm("EditExam", "Course", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                            @Html.AntiForgeryToken()
+                            @Html.HiddenFor(x => x.CourseID, new { @Value = Model.CourseID })
+
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                <label>Tiêu đề</label>
+
+                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                            </div>
+
+                            <div class="form-group">
+                                <label>Hình thức thi</label>
+                                <select name="type" id="type" multiple class="js-example-basic-single" style="width:100%">
+                                    <option @(type == 1 ? "selected" : "") value="1">Trắc nghiệm</option>
+                                    <option @(type == 2 ? "selected" : "") value="2">Nộp file</option>
+                                    <option @(type == 3 ? "selected" : "") value="3">Tự luận</option>
+                                </select>
+                            </div>
+
+                            @*<div class="form-group">
+                                    <label>Số lượng câu hỏi</label>
+                                    <select name="sl" id="sl" multiple class="js-example-basic-single" style="width:100%">
+                                        <option @(Model.NumberQuestion == 50 ? "selected" : "") value="50">50</option>
+                                        <option @(Model.NumberQuestion == 60 ? "selected" : "") value="60">60</option>
+                                    </select>
+                                </div>*@
+
+                            <div class="form-group">
+                                <label>Thời gian làm bài</label>
+
+                                @Html.TextBoxFor(model => model.Time, new { @class = "form-control", type = "number" })
+                                @Html.ValidationMessageFor(model => model.Time, "", new { @class = "text-danger" })
+
+                            </div>
+
+
+                            <label>Ngày giờ bắt đầu</label>
+                            <div class="form-group">
+                                <div class='input-group date'>
+                                    <input type='text' name="start" class="form-control" id='TimeStart' value="@Model.DateStart @Model.TimeStart" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                                <script type="text/javascript">
+                                    $(function () {
+                                        $('#TimeStart').datetimepicker();
+                                    });
+                                </script>
+                            </div>
+
+
+                            <label>Ngày giờ kết thúc</label>
+                            <div class="form-group">
+
+                                <div class='input-group date'>
+                                    <input type='text' name="end" class="form-control" id='TimeEnd' value="@Model.DateEnd @Model.TimeEnd" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                                <script type="text/javascript">
+                                    $(function () {
+                                        $('#TimeEnd').datetimepicker();
+                                    });
+                                </script>
+                            </div>
+
+                            @*<div class="form-group">
+                                    <input type="file" id="dataFile" name="file" />
+                                </div>*@
+                            if (Model.Type.Trim().Equals("1"))
+                            {
+                                <div class="form-group">
+                                    <select id="ques" multiple class="js-example-basic-single" style="width:100%">
+
+                                        @foreach (var item in listques)
+                                        {
+                                            int a = 1;
+                                            foreach (var item2 in ListQuesSelect)
+                                            {
+                                                if (item.QuestionID == item2.QuestionID)
+                                                {
+                                                    a = 0;
+                                                    break;
+                                                }
+                                            }
+                                            <option @(a == 0 ? "selected" : "") value=@item.QuestionID>@item.Ques A: @item.Option1, B: @item.Option2, C: @item.Option3, D: @item.Option4</option>
+                                        }
+                                    </select>
+                                </div>
+                            }
+
+                            <input type="text" hidden id="quesid" name="listQuesSelect">
+
+                            <div class="form-group">
+                                <div style="text-align:center">
+                                    <input type="submit" value="Cập nhật" onclick="GetId()" class="btn btn-primary" />
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    $(document).ready(function () {
+        $("#ques").select2({
+            tags: true,
+            placeholder: 'Chọn câu hỏi',
+            allowClear: true,
+            //maximumSelectionLength: document.getElementById("sl").value,
+        });
+    });
+
+    $(document).ready(function () {
+        $("#type").select2({
+            tags: true,
+            placeholder: 'Chọn hình thức thi',
+            allowClear: true,
+            maximumSelectionLength: 1,
+            minimumResultsForSearch: Infinity
+        });
+    });
+
+    $(document).ready(function () {
+        $("#sl").select2({
+            tags: true,
+            placeholder: 'Chọn số lượng câu hỏi',
+            allowClear: true,
+            maximumSelectionLength: 1,
+            minimumResultsForSearch: Infinity
+        });
+    });
+
+    function GetId() {
+        $("#quesid").val($("#ques").val())
+    }
+</script>

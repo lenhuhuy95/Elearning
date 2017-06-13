@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewBag.Title = "AddUserToCourse";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+    var users = (List<Model.EF.User>)ViewBag.users;
+    var courses = (List<Model.EF.Course>)ViewBag.courses;
+}
+
+<script src="~/Assets/client/js/jquery-3.1.1.min.js"></script>
+<script src="~/Assets/client/js/select2.min.js"></script>
+<link href="~/Assets/client/css/select2.min.css" rel="stylesheet" />
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Order
+        <small>Order panel</small>
+    </h1>
+    <br />
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Order</a></li>
+        <li class="active">Add user to course</li>
+    </ol>
+</section>
+
+@using (Html.BeginForm("AddUserToCourse", "Order", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-8">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div role="form">
+                        <div class="box-body">
+                            <div class="form-group">
+                                @*@Html.LabelFor(model => model.CategoryID)
+
+                                    @Html.DropDownListFor(model => model.CategoryID, null, new { htmlAttributes = new { @class = "form-control" }, placeholder = "Chuyên mục" })
+                                    @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })*@
+
+                                <select id="users" multiple class="js-example-basic-single" style="width:100%">
+                                    @foreach (var item in users)
+                {
+                                        <option value=@item.UserID>@item.UserID -- @item.Name</option>
+                                    }
+                                </select>
+                                <input type="text" hidden id="userid" name="userid">
+                            </div>
+
+
+                            <div class="form-group">
+                                @*@Html.LabelFor(model => model.CategoryID)
+
+                                    @Html.DropDownListFor(model => model.CategoryID, null, new { htmlAttributes = new { @class = "form-control" }, placeholder = "Chuyên mục" })
+                                    @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })*@
+
+                                <select id="courses" multiple class="js-example-basic-single" style="width:100%">
+                                    @foreach (var item in courses)
+                {
+                                        <option value=@item.CourseID>@item.CourseID -- @item.CourseName</option>
+                                    }
+                                </select>
+                                <input type="text" hidden id="courseid" name="courseid">
+                            </div>
+
+                            <div class="box-footer">
+                                <input type="submit" onclick="GetId()" value="Thêm người dùng vào khóa học" class="btn btn-info pull-right" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+<!--Script xử lý đoạn select2 cho Tag-->
+<script>
+    $(document).ready(function () {
+        $("#users").select2({
+            tags: true,
+            placeholder: 'Chọn người dùng',
+            maximumSelectionLength: 1,
+            allowClear: true
+        });
+    });
+
+    $(document).ready(function () {
+        $("#courses").select2({
+            tags: true,
+            placeholder: 'Chọn khóa học',
+            maximumSelectionLength: 1,
+            allowClear: true
+        });
+    });
+
+    function GetId() {
+        $("#userid").val($("#users").val())
+        $("#courseid").val($("#courses").val())
+    }
+</script>

@@ -1,0 +1,165 @@
+﻿@model PagedList.IPagedList<Model.EF.Lecture>
+@using PagedList.Mvc;
+@{
+    Layout = null;
+    var checkAccountUser = ViewBag.CheckAccount;
+    var SessionNow = ViewBag.SessionNow;
+}
+
+@*<!-- jquery -->
+    <script src="~/Assets/client/js/jquery-3.1.1.min.js"></script>
+
+    <!-- fancybox -->
+
+    <script src="~/Assets/client/js/jquery.fancybox.pack.js"></script>
+    <link href="~/Assets/client/css/jquery.fancybox.css" rel="stylesheet" />
+
+    <!-- videojs -->
+
+    <script src="~/Assets/client/js/video.js"></script>
+    <link href="~/Assets/client/css/video-js.css" rel="stylesheet" />*@
+
+<script src="~/Assets/client/lightbox/YouTubePopUp.jquery.js"></script>
+<link href="~/Assets/client/lightbox/YouTubePopUp.css" rel="stylesheet" />
+
+
+<script>
+    videojs.options.flash.swf = "video-js/video-js.swf"
+</script>
+
+<script>
+    $(function () {
+
+        $('.fancybox').click(function (e) {
+            e.preventDefault();
+
+            $.fancybox.open({
+                content: '<video id="video" width="' + $(this).attr('data-width') +
+                '" height="' + $(this).attr('data-height') +
+                '" preload="auto" controls="controls" class="video-js vjs-default-skin"><source src="'
+                + $(this).attr('href') + '" type="video/mp4" /><div>Your browser does not support the HTML5 video tag.</div></video>',
+                afterShow: function () {
+                    // do this for the dynamically loaded video
+                    videojs('video', {}, function () {
+                    });
+                },
+                beforeClose: function () {
+                    // if you do not do this the video will keep downloading in the background
+                    videojs('video').dispose();
+                }
+            });
+        });
+
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery("a.bla-1").YouTubePopUp();
+        jQuery("a.bla-2").YouTubePopUp({ autoplay: 0 }); // Disable autoplay
+    });
+</script>
+
+<tbody>
+    @foreach (var item in Model)
+            {
+        <tr class="clickable" data-toggle="collapse" id="@item.LectureID" data-target=".@item.LectureID">
+            <td style="width:80%"><a href="/Course/LectureContent/@item.LectureID"> -- @item.LectureName </a></td>
+            @if (item.Description != null)
+                {
+                <td><i class="glyphicon glyphicon-triangle-bottom"></i></td>
+            }
+            else
+            {
+                <td></td>
+            }
+            @if (SessionNow == null)//khong co tai khoan dang dang nhap
+            {
+                if (item.Status == true)
+                {
+                    if (item.Video != null)
+                    {
+                        if (item.Video.Contains("mp4") || item.Video.Contains("wbm") || item.Video.Contains("MP4"))
+                        {
+                            <td style="width:100px"><a href="~/Video/@item.Video" class="fancybox btn btn-success" data-width="767" data-height="400">Video</a></td>
+                        }
+                        if (item.Video.Contains("www.youtube.com"))
+                        {
+                            <td style="width:100px">
+                                <a class="bla-2 btn btn-success" href="@item.Video">Video</a>
+                            </td>
+                        }
+                        if (item.Video.Contains("vimeo.com"))
+                        {
+                            <td style="width:100px">
+                                <a class="bla-2 btn btn-success" href="@item.Video">Video</a>
+                            </td>
+                        }
+                    }
+                }
+            }
+            else //co tai khoan dang dang nhap
+            {
+                if (!checkAccountUser) // khong co ten trong ds dang ky khoa hoc
+                {
+                    if (item.Status == true)
+                    {
+                        if (item.Video != null)
+                        {
+                            if (item.Video.Contains("mp4") || item.Video.Contains("wbm") || item.Video.Contains("MP4"))
+                            {
+                                <td style="width:100px"><a href="~/Video/@item.Video" class="fancybox btn btn-success" data-width="767" data-height="400">Video</a></td>
+                            }
+                            if (item.Video.Contains("www.youtube.com"))
+                            {
+                                <td style="width:100px">
+                                    <a class="bla-2 btn btn-success" href="@item.Video">Video</a>
+                                </td>
+                            }
+                            if (item.Video.Contains("vimeo.com"))
+                            {
+                                <td style="width:100px">
+                                    <a class="bla-2 btn btn-success" href="@item.Video">Video</a>
+                                </td>
+                            }
+                        }
+                    }
+                }
+                else //co ten trong ds dang ky khoa hoc
+                {
+                    if (item.Video != null)
+                    {
+                        if (item.Video.Contains("mp4") || item.Video.Contains("wbm") || item.Video.Contains("MP4"))
+                        {
+                            <td style="width:100px"><a href="~/Video/@item.Video" class="fancybox btn btn-success" data-width="767" data-height="400">Video</a></td>
+                        }
+                        if (item.Video.Contains("www.youtube.com"))
+                        {
+                            <td style="width:100px">
+                                <a class="bla-2 btn btn-success" href="@item.Video">Video</a>
+                            </td>
+                        }
+                        if (item.Video.Contains("vimeo.com"))
+                        {
+                            <td style="width:100px">
+                                <a class="bla-2 btn btn-success" href="@item.Video">Video</a>
+                            </td>
+                        }
+                    }
+                }
+            }
+
+        </tr>
+
+        <tr class="collapse @item.LectureID">
+            @if (item.Description != null)
+                {
+                <td colspan="3">@item.Description</td>
+            }
+        </tr>
+    }
+</tbody>
+
+
+
+

@@ -1,0 +1,94 @@
+﻿@model PagedList.IPagedList<Model.EF.Order>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "ListOrderProcessing";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section jsFooter{
+    <script src="~/Assets/admin/js/controller/orderControllerChangeStatus.js"></script>
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Orders
+        <small>Control panel</small>
+    </h1>
+    <br />
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Order Management</a></li>
+        <li class="active">Orders Processing</li>
+    </ol>
+</section>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Danh sách đơn hàng</h4>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+                <!-- Form tìm kiếm cho đơn hàng -->
+                @using (Html.BeginForm("ListOrderProcessing", "Order", FormMethod.Get))
+                {
+                    <div class="row form-group">
+                        <div class="col-lg-12">
+                            <div class="col-md-4">
+                                <input type="text" value="@ViewBag.SearchString" class="form-control" name="searchString" placeholder="Nhập tên đơn hàng" />
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Mã đơn hàng</th>
+                                <th>Người nhận</th>
+                                <th>Ngày đặt hàng</th>
+                                <th>Số điện thoại</th>
+                                <th>Địa chỉ</th>
+                                <th>Email</th>
+                                <th>Trạng thái</th>
+                                <th>Thông tin đơn hàng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.OderID </td>
+                                    <td>@item.ShipName </td>
+                                    <td>@item.CreateDate </td>
+                                    <td>@item.ShipMobile </td>
+                                    <td>@item.ShipAddress</td>
+                                    <td>@item.ShipEmail </td>
+                                    <td><button type="button" class="btn btn-block btn-warning btn-sm btn-active" data-idorder="@item.OderID">@(item.Status.Value ? "Hoàn tất" : "Đang xử lý")</button></td>
+                                    <td>
+                                        <a href="/Admin/Order/DetailOrder/@item.OderID" class="btn btn-block btn-info btn-flat">Chi tiết</a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                    @Html.PagedListPager(Model, page => Url.Action("ListOrder", new { page, @searchString = @ViewBag.SearchString }))
+                </div>
+                <!-- /.table-responsive -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-6 -->
+</div>
+<!-- /.row -->
